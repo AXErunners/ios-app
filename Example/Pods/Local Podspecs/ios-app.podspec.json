@@ -1,7 +1,7 @@
 {
   "name": "ios-app",
   "version": "0.0.1",
-  "summary": "Axe Platform Protocol",
+  "summary": "AXE Platform Protocol",
   "description": "The iOS implementation of the Axe Platform Protocol",
   "homepage": "https://github.com/axerunners/ios-app",
   "license": {
@@ -15,7 +15,7 @@
     "git": "https://github.com/axerunners/ios-app.git",
     "tag": "0.0.1"
   },
-  "social_media_url": "https://twitter.com/podkovyr",
+  "social_media_url": "https://twitter.com/axerunners",
   "platforms": {
     "ios": "10.0"
   },
