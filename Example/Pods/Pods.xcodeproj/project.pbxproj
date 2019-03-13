@@ -1,0 +1,2011 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02D4E91C30E175ECB2380C9052E0A8DC /* schema_v7.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AD85D57D618946467F09E9AA42F7668 /* schema_v7.json */; };
+		0658161795AD904E0F72D479393460E0 /* cborencoder_close_container_checked.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FE9308A50400B141AFE9B3088307CA5 /* cborencoder_close_container_checked.c */; };
+		07843B46F736438C17CF1858D8CF5CAA /* DSSchemaValidationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 68DA05D1DA062E39D06746181A687B9C /* DSSchemaValidationResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		085671851C35E86F160395486CF81DB9 /* DSJSONSchemaValidationOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552623C798FD67BB431A5550971C750 /* DSJSONSchemaValidationOptions.m */; };
+		08B6E2B4439876A485993F2A094322B9 /* NSNumber+DSJSONNumberTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C78ADBDA1B7257BE29FC862AA636B5C /* NSNumber+DSJSONNumberTypes.m */; };
+		091FE12DF7C7777491853A6C34326347 /* DSSchemaHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 3149B83873D0339492CBA006744648CA /* DSSchemaHash.m */; };
+		09810790938103BF9F0960ABA69CBC3A /* DSJSONSchemaConstValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2081E87CC4010E385F6184787B270168 /* DSJSONSchemaConstValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C65F25295BADA6758016FE2DDF126DF /* DSJSONSchemaValidationContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E73C99D22132FD2EB7B0BEB931B04E4 /* DSJSONSchemaValidationContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CF2E5570062FC9CD331926AB490B12B /* DSSchemaPersistenceStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B852AD192A6ED1C08151A9792826DF /* DSSchemaPersistenceStack.m */; };
+		0E15F050615DD0A816ED5FAB568296D4 /* DSSchemaModelBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B76EA03EBD6F7779A763D1329F22946 /* DSSchemaModelBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F2A5710B78CC0673F8400C8D3B917F7 /* tinycbor-version.h in Headers */ = {isa = PBXBuildFile; fileRef = 84A043812FDFD96FEE3B67BD22C5BD7E /* tinycbor-version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102FB4DFA0C396AF67743D7B9F3BEA7E /* DSSchemaDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CB5DF243E9F4FC545CE56136D44090 /* DSSchemaDefinition.m */; };
+		11BC8354322099540DCD0B812530BF26 /* DSSchemaDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AF9EF60C3C317731D14C1FE4EF7992 /* DSSchemaDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13A47935139E7A055D74E95B017B3199 /* cbortojson.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E493B3D29A7FB56396946F1C81000A7 /* cbortojson.c */; };
+		14DB444382146D8A31E220837DC0D997 /* DSJSONSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = FC355AC167517DF316254830B26BA409 /* DSJSONSchema.m */; };
+		164BC4F6484BFE069D4DCE839CC4F3C3 /* DSJSONSchema+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = E2EBE31107E217F874F152117C7A5F09 /* DSJSONSchema+Protected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1717FAED88B51C7ABCF52CB11BE08FEF /* DSJSONSchemaStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = FB9781D7EB21B109CF1B641A300DB153 /* DSJSONSchemaStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		174095403DDC224A5F89210ADE3C78A0 /* DSJSONSchemaContentValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D4AAA589387947B47FD1A202012A74 /* DSJSONSchemaContentValidator.m */; };
+		187ABE3DA31932F323AC1D493A05726C /* DSSchemaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECFFBD55588E17C5C094EC9B90B9FAF /* DSSchemaObject.m */; };
+		1B65DAC6CACF3D29ED2F00E00A29AD90 /* DSJSONSchemaFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFED0EB5E8BC314CA2578E618D2DE83 /* DSJSONSchemaFactory.m */; };
+		1CF851ED10991396CE50A5947FF14BF4 /* ios-app.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 974694F981EB7E0DAE512BBB63C38ACF /* ios-app.bundle */; };
+		1EE04070D25951CBFABDBE1F68FA46AE /* DSJSONSchemaStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F28A77845B09136959A0EB964D14F46 /* DSJSONSchemaStorage.m */; };
+		2238C13FB2478BE9C11E87E231154012 /* cborpretty_stdio.c in Sources */ = {isa = PBXBuildFile; fileRef = 61537976A64306E54C7561D1354A7B09 /* cborpretty_stdio.c */; };
+		232FBF5818812E8359D7BAB3A52F44B7 /* DSJSONSchemaErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = BD216392FBE0824AC97C32107F939E69 /* DSJSONSchemaErrors.m */; };
+		259D9C9550AB764D3EAABDF84738D77D /* DSSchemaHash.h in Headers */ = {isa = PBXBuildFile; fileRef = A2B8D42841655F2D3D3688EF3C629029 /* DSSchemaHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28967461D2E739E801BFDAED23AAB490 /* ios-app-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 310A0C98D708775BE8BA6126D56D9D22 /* ios-app-dummy.m */; };
+		297424E8717E48CAB6B3FEBBDA25C25F /* DSJSONSchemaFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F72799345180301843F79FDF4A7BD61 /* DSJSONSchemaFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BAAB78E4CF84145C52EC778DD38D899 /* DSJSONSchema+AxeSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = EB577F7B41F9E6C1F09BBA94FF3CB835 /* DSJSONSchema+AxeSchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C9730E60F61210FCB3113D846B2299B /* compilersupport_p.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EE0A709FB2FBFFF2105093A01C1DEB0 /* compilersupport_p.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E2B27ACC7687A14CFB897448EF79271 /* cborjson.h in Headers */ = {isa = PBXBuildFile; fileRef = 1263C161F8FBD7EC170D69E32C9D5925 /* cborjson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D3E0BEF951E346E9B4A7CC72F8559E /* tinycbor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E88B1B448F771AC866567FD1B392E4 /* tinycbor-dummy.m */; };
+		30E7A6214B878FDB11E3BFBE4E61F9FF /* DSJSONSchemaNumericValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B1270FD3F1644363B5767D8660842C6 /* DSJSONSchemaNumericValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3123AD2DC9F2E5357776AC857EE1278D /* NSURL+DSJSONReferencing.h in Headers */ = {isa = PBXBuildFile; fileRef = 526A023FE2A2263837BFD1534727C112 /* NSURL+DSJSONReferencing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32280BBF268B9558F5BEE3E1DACB588D /* DSJSONSchemaDependenciesValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8597DF0C20C9FBEEDBE1BF0DC1A95725 /* DSJSONSchemaDependenciesValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3376E80DFD020391E609E7BFB26B9D63 /* NSData+DSSchemaUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8815334CFC582E9364F505B4F132D280 /* NSData+DSSchemaUtils.m */; };
+		34F150BFA513EEA256A3EBD4EA5F3B34 /* NSArray+DSJSONComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F7EB824F781090BDD0D05F9C5A8A04 /* NSArray+DSJSONComparison.m */; };
+		388984DF6D007380C09B39DFDD54FB7B /* DSJSONSchemaConstValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 486D9EA0A54D395A27F1A46B909E2112 /* DSJSONSchemaConstValidator.m */; };
+		3A616AA59D449D136AB50A4325735BC8 /* DSJSONSchemaConditionalValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 878D73A86E08CCC776528F71955B6B4B /* DSJSONSchemaConditionalValidator.m */; };
+		3AEFD1492126B3FE1D67058B7FD4AE56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3A128FC6503768305D6CCD6E425F23 /* Foundation.framework */; };
+		3BBCA4C82F3EE01D9E9E05A327354EDD /* DSJSONSchemaObjectValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B7464BD15ABC075A5543026A30EFB998 /* DSJSONSchemaObjectValidator.m */; };
+		3C769D408B16D520FE4216059EBF40F7 /* DSJSONSchemaPropertyNamesValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5650F26771DCA8FFBAB10827956401C6 /* DSJSONSchemaPropertyNamesValidator.m */; };
+		3CC4AF64351F6410F4F0C3B8BA6C2F21 /* DSJSONSchemaPropertyNamesValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D53CF6FA9E01BCB623CD9DCD2CE488 /* DSJSONSchemaPropertyNamesValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CDE7F2F3C1F249447BB81CCFE50BDF9 /* DSJSONSchemaValidation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577A369099E979FDBB9D69F6CA51838E /* DSJSONSchemaValidation.framework */; };
+		42288C2104172EB61D9122AE261316D0 /* cborparser_dup_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 1510D3B6887DD2471C3F90E7721731B4 /* cborparser_dup_string.c */; };
+		45F35ACC0E732165F525306F24D049F0 /* cbor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F69CF0581FA4E43A0848FB8F4B8759E /* cbor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47322B08D4E35A60E8341F4FC1B6FCF8 /* DSJSONDictionarySchema.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1FF0A5B68C8AC8D88C65872FA57B2D /* DSJSONDictionarySchema.m */; };
+		49327967D014251A95FB3B39800BFB3D /* DSJSONSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAAA4BBAB456501E11BC9016009FCF7 /* DSJSONSchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495FE0C0F5779099F83C7A02DF3DF225 /* TinyCborObjc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C54B30DDE566E6C54013E08BA97FD1C /* TinyCborObjc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DB14C9D7F675AD4FEBE3DDA4C3D2DE9 /* DSJSONSchemaValidation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 205D8EC34C92F838C2EC2A7CB222B3AB /* DSJSONSchemaValidation-dummy.m */; };
+		4DBAE430B8E7F77D3FA3E82B92F80B13 /* DSSchemaJSONSchemaUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4408170ECFD20552FAD7EC5A6DF36490 /* DSSchemaJSONSchemaUtils.m */; };
+		502292D5E2BB829B14E673DFAC3E2FDD /* tinycbor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8ABFDE2EDC0AED712EB848BAF01D2DB /* tinycbor.framework */; };
+		5041A4454CC1CABA2F0FFC072F4A412F /* DSJSONSchemaValidationOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = A4AD573FC098D83FF90A708222426A65 /* DSJSONSchemaValidationOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50B7041CE9F1699C907FA1640CC8EA3F /* DSJSONSchemaObjectPropertiesValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8724AFC58D3E8BA86B1747EE8E133C52 /* DSJSONSchemaObjectPropertiesValidator.m */; };
+		5134E80FCDBF3FF27A2C298300CFBB3B /* DSJSONSchemaCombiningValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = A39A3DD725F8141EC32C8B05102D0B9C /* DSJSONSchemaCombiningValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5434DEA2441413783D3C8277C3F6CA10 /* DSJSONSchemaObjectValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 09E2025387F215D55536637B67BD4F4D /* DSJSONSchemaObjectValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54817C1D073EDFF77772501242AAFF65 /* DSJSONSchema+StandardValidators.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FF8211908E25952BF00B489A5DC489 /* DSJSONSchema+StandardValidators.m */; };
+		559FCBBAC64128C855D6DE97856CE0B4 /* TinyCborObjc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D687B9CC2393D64DF1774D4A03D514DA /* TinyCborObjc-dummy.m */; };
+		5623BCE751155D5D2E0A166E348D316E /* DSSchemaValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AB84AA33D3B04778D20ACDEE992DEF /* DSSchemaValidator.m */; };
+		5B4ADEFCBBCEC7EE7B5EA53240755EC0 /* DSJSONSchemaCombiningValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BB65311C2AA163AC35E1C8E277F1C3 /* DSJSONSchemaCombiningValidator.m */; };
+		5DFF7FC828A7E95A9CC4154118574923 /* NSAttributeDescription+DSSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C51E02395EAC4F4F499FB35F459DE4 /* NSAttributeDescription+DSSchema.m */; };
+		5E526DD02FDE63F843F482844CC50C44 /* NSString+DSJSONPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 038B2197C9DE521AB1B10D5F4B1AF62E /* NSString+DSJSONPointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F2FEDEE8C411A29FFF77FDF41C4F867 /* DSJSONSchemaValidationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 051F1C90E3952E1DFF0B50F68125419A /* DSJSONSchemaValidationContext.m */; };
+		60EA0012A923112603155AFE0A72E1FF /* DSJSONSchemaArrayValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5DE20042F349BC9091FE49A414DA5C /* DSJSONSchemaArrayValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		640D854C0AFE108FB32F6B42CBC8D1AE /* DSJSONSchemaContainsValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 14521C4901952DC772B75378089C16F0 /* DSJSONSchemaContainsValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6453F63B7E9B8FFC95BF72C557524B24 /* DSSchemaStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = AE716FD59602EA53E0EAA66C8E0AEABE /* DSSchemaStorage.m */; };
+		64BA9B59E582E4B689BC36933CEB8288 /* DSJSONSchemaDependenciesValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 88ABFBCA585211A7AB5E3E6C9D0DFF2F /* DSJSONSchemaDependenciesValidator.m */; };
+		673129D13C0153A388ED93316F39AE61 /* DSJSONSchemaEnumValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DBC86DC35993F836D5319B996817772 /* DSJSONSchemaEnumValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		691E70174F45B21E43FE0BA967660C20 /* DSJSONSchema+StandardValidators.h in Headers */ = {isa = PBXBuildFile; fileRef = 459E940220C9F0DFA3A50EEB5F9107C3 /* DSJSONSchema+StandardValidators.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B2C2E619BABEDD57006BD4C613D8F58 /* NSObject+DSCborEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 25C1F175EEEBC81EB8D669814D581D68 /* NSObject+DSCborEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B8176B3187BD774A685661960CEBB6A /* DSSchemaValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 709D14814DCFBFDD38CC348ECEA79627 /* DSSchemaValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CBDAE4FEDEDE77B345394F901323CC6 /* NSDictionary+DSJSONComparison.h in Headers */ = {isa = PBXBuildFile; fileRef = 45DC1E44EED7A921A0B2A4967630C8AB /* NSDictionary+DSJSONComparison.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E98FA248441D40EB338C72D7FC0EB6E /* Pods-ios-app_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FCC2C697930C65C96425DFA2923DE1 /* Pods-ios-app_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78020A1CF648BA2D2DBBA2F7CC749D55 /* NSBundle+DSSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BD8DCC404E0C1F7526233B99EF02892 /* NSBundle+DSSchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C060A07B7F0937A5710EC1B4EE39150 /* DSJSONSchemaErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC230E84E016C53B5EE469909B17FE5 /* DSJSONSchemaErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E73091C6A7CEFCB325BD17E327F377B /* axe_system_schema.json in Resources */ = {isa = PBXBuildFile; fileRef = E7E12F850525C2B5AB5029EB5B6D39CA /* axe_system_schema.json */; };
+		7ECDBF6E3AD986D2C911F5C422C39FBB /* NSDictionary+DSJSONDeepMutableCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69851DD111510F8FE6FEE29E2321332F /* NSDictionary+DSJSONDeepMutableCopy.m */; };
+		7F4E7CA9F56897D22E42759DA0B5D75B /* DSJSONSchemaContentValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C6BC6DA7D4B8DDBE71593F5EE0BCD1 /* DSJSONSchemaContentValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80397918DB465F9F86C014F16336EE4A /* DSJSONSchemaTypeValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CE05769823523E4188AB523408104 /* DSJSONSchemaTypeValidator.m */; };
+		83815F16D5E1F4093580F1EF02E363AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3A128FC6503768305D6CCD6E425F23 /* Foundation.framework */; };
+		84660DB06E344C12235987CFE39F983F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3A128FC6503768305D6CCD6E425F23 /* Foundation.framework */; };
+		84E136F32075A2F6681ADE6B6F187B4D /* DSJSONSchemaStringValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 694C7433A6A4A2E32948A7EFBDAFA407 /* DSJSONSchemaStringValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C0DB24BAF74ACDE0CA1F1164E20C392 /* DSJSONSchemaConditionalValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 232D454CFD6310092C2FFB32739942E1 /* DSJSONSchemaConditionalValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D3BD260828697D7D4FC47D30B99098A /* NSNumber+DSJSONNumberTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = FCBF1F12BC047598D7F5605C1EDF3CA6 /* NSNumber+DSJSONNumberTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DCD0A5D1089733333F8AE22E41CC79A /* NSString+DSJSONPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0525D4AA96C546C830E187BA32AE2 /* NSString+DSJSONPointer.m */; };
+		8DD1E312E0C67A8345DAF91EC5924223 /* DSJSONSchema+AxeSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E826861F7C74F8CDD8404F99F39C344 /* DSJSONSchema+AxeSchema.m */; };
+		921A56D3EDCB476C9492C0BC6D0B6453 /* cborpretty.c in Sources */ = {isa = PBXBuildFile; fileRef = B91DF460D4C1F3B045A4CE2C71FB8C17 /* cborpretty.c */; };
+		94C79B18908A944CBB3438B4C3ADA702 /* DSJSONSchemaValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA50206FB9EAAAA682F256E60427765 /* DSJSONSchemaValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94F401A62E4DCFA5FBF9DB091BA93622 /* DSJSONSchemaReference.h in Headers */ = {isa = PBXBuildFile; fileRef = E9FD936B48C65810C828DFE84192A7A1 /* DSJSONSchemaReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9645B3B7FC6C7285179753C0F87FA1EC /* cborencoder.c in Sources */ = {isa = PBXBuildFile; fileRef = D8EC4239160693DAC6D1F26BB092354B /* cborencoder.c */; };
+		96EF642932EC68B578104CB16825C5C3 /* Pods-ios-app_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 791428536F62DD79E4B8286BE53F1788 /* Pods-ios-app_Example-dummy.m */; };
+		9B1D7E7BAB75324DFA9256511C62DF81 /* DSJSONSchemaSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = A66407F208BDBCCC391DFDA655895DC2 /* DSJSONSchemaSpecification.m */; };
+		9B5FF1F63DC73F80421983CA94EBEDF4 /* DSJSONSchemaDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA60F134F6F6483693DDE1B6BABDC8E3 /* DSJSONSchemaDefinitions.m */; };
+		9C17141ACEB4B083FF2B79EC3755DD9C /* DSJSONSchemaContainsValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F895127014AAE6D922DE81742E98E0 /* DSJSONSchemaContainsValidator.m */; };
+		9C70A2D581D2C904A3DA51DCF61E7E48 /* NSDictionary+DSJSONComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = E76F00FD1E236F78404AF21D5E14141B /* NSDictionary+DSJSONComparison.m */; };
+		9D93CDF2D616B973B1D79FFC71CEE193 /* DSJSONSchemaSpecification.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D77505860617F0B82C344376CE09DF9 /* DSJSONSchemaSpecification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0BFF2B68A060FDDD50FEF77692256B6 /* cborvalidation.c in Sources */ = {isa = PBXBuildFile; fileRef = E852C1B79E7E8B0B99325A9F0BAF00D8 /* cborvalidation.c */; };
+		A0DDD1FB97E59DAC8556214F5E242BD7 /* DSJSONSchemaFormatValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED019DE8731B20F4D2D335CF697E975 /* DSJSONSchemaFormatValidator.m */; };
+		A0F241C86D9A001EB39FBAB8BED62F21 /* DSSchemaHashUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4157AEE4413D21B4AC036D8E94AE75F5 /* DSSchemaHashUtils.m */; };
+		A1D4D5B2C6697D48C3C4265BD4177729 /* DSSchemaFees.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E51F7964A5AF4AABFB361FB78B5F0F0 /* DSSchemaFees.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2563CF9EC2FDD69DE58D5DCB1F3630E /* NSData+DSSchemaUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7705E0642F4380C2729092C0978C46DF /* NSData+DSSchemaUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3A45602ECA931A79425A3C4D8BD9F10 /* NSObject+DSCborEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = D6885DC37D9D9744A468852E4C9567B2 /* NSObject+DSCborEncoding.m */; };
+		A6DB09610CFFD19EE42732411D3903A6 /* DSJSONSchemaFormatValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = C11208A27A2A4FF3F6999CE50F3F05AB /* DSJSONSchemaFormatValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA00C1402EC716BA2A1277B4160BF0C8 /* DSJSONSchemaObjectPropertiesValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA23BE82CF092A934AD7042AB9D646F /* DSJSONSchemaObjectPropertiesValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA11E7CDBAAB4FB6F2A2BC3EE816E734 /* cborparser.c in Sources */ = {isa = PBXBuildFile; fileRef = 92B2FFDFF4A30CE86B1E1ECD9AF0F228 /* cborparser.c */; };
+		AC7144BFCACAEE948F2014909D9F2C5D /* NSObject+DSJSONComparison.h in Headers */ = {isa = PBXBuildFile; fileRef = C5B4A553667D7E6B91A25DCA4DC066A8 /* NSObject+DSJSONComparison.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD706F44EF28C069122BDA1265B10607 /* Pods-ios-app_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A58325EB16A2D9A39ADE92937F471E /* Pods-ios-app_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD9C51FA9F300C21B6579056C34DFA4D /* DSJSONSchemaArrayItemsValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F348D14E6AA286D9A70B55071C8E0 /* DSJSONSchemaArrayItemsValidator.m */; };
+		ADBDA20A1D7AF93EE5D1243E39B9188B /* NSEntityDescription+DSSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = B2669EB13F681686AFAABE01308FE542 /* NSEntityDescription+DSSchema.m */; };
+		AEA8632A9483B787A94A14B9A2BED099 /* NSObject+DSJSONComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DA9DFB363E6DE73E23F755501BED57 /* NSObject+DSJSONComparison.m */; };
+		AEC3271D363F16E16DCF06495E122F69 /* DSJSONSchemaArrayItemsValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = C71F9A4A1FECC08D539270314F606350 /* DSJSONSchemaArrayItemsValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1731A8AB5A87A57E6CCD19C349D003F /* DSJSONSchemaStringValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E23269742770CFEB2C6CD2FF1CA8F3 /* DSJSONSchemaStringValidator.m */; };
+		B1E5E7C39A617E43FF321CCEBDC0D04B /* DSJSONSchemaNumericValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5167E87B0ECA0A96C7CBABF2CEACA8E9 /* DSJSONSchemaNumericValidator.m */; };
+		B3435BD091E6336D8A6C4CBE8D741FF6 /* TinyCborObjc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0A596CC118ED8488A7BB13D6AB135F /* TinyCborObjc.framework */; };
+		B690F2902EE97C7BFDA1ADF6D89BB50E /* DSJSONSchemaArrayValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B78CD408F8CD44E4CA576226CAF6E5 /* DSJSONSchemaArrayValidator.m */; };
+		B71F43DBD11DC5D3F9A3890A4D31D758 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3A128FC6503768305D6CCD6E425F23 /* Foundation.framework */; };
+		B7CAD68048F527515DCB90814A697EEE /* DSSchemaFees.m in Sources */ = {isa = PBXBuildFile; fileRef = 702D9F8DE14210FA572FEC28D569AD1C /* DSSchemaFees.m */; };
+		B80A043EBBF208990451949609DF0258 /* DSJSONBooleanSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = 9030A1E6E9B9330F7BA3E2603437327C /* DSJSONBooleanSchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B831AA927586BD8792475C84FF84D837 /* DSSchemaJSONSchemaUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F1A64A2D704E5F65EC1A2E6A45D27A3 /* DSSchemaJSONSchemaUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD1B5A328FE430DCF35A4788ED31DEF1 /* NSEntityDescription+DSSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B0EFF7551695A0FAFE0A03E38F0180 /* NSEntityDescription+DSSchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD8C5E18B9E4AB11472AEBC322EF7325 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3A128FC6503768305D6CCD6E425F23 /* Foundation.framework */; };
+		C2A532C75A340ACD1752E24B196383F3 /* ios-app-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E424C9E5F2314D41D6505FB7AA0C74 /* ios-app-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4FD3BBB4AC81427E1E2C6060A0647FD /* NSArray+DSJSONComparison.h in Headers */ = {isa = PBXBuildFile; fileRef = F94BD00658783896494EA98ABF8EA5FE /* NSArray+DSJSONComparison.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6A700DA4DE49D988445CC60AFDA9499 /* DSJSONSchemaValidation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B9ED09682D2F8B3CEAAFD928E4B071 /* DSJSONSchemaValidation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9C26A8E003713A935CB08E452C850BD /* cborinternal_p.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B4511569874FED2D17E56D4B2EF0200 /* cborinternal_p.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9EF26731C659A13D8F91D1E79F11956 /* NSDictionary+DSJSONDeepMutableCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D677FE088DF906795C0D55DC6503B1C /* NSDictionary+DSJSONDeepMutableCopy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9F61908FA7B4A0427DDC4561BFE18D /* NSBundle+DSSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BF6A19EE0096501FEC51B25E12716D /* NSBundle+DSSchema.m */; };
+		CB56963B29450CB2D2F8F5C4FAA478EA /* NSURL+DSJSONReferencing.m in Sources */ = {isa = PBXBuildFile; fileRef = 49639E8756C74CCEEFB535D0A2868E08 /* NSURL+DSJSONReferencing.m */; };
+		D00ABA78489618C18EBFBD62F57A9B51 /* DSJSONSchemaReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0627FADB95FEA832C2B474BB27855B /* DSJSONSchemaReference.m */; };
+		D33BB244C410647C61338E5A155E2032 /* utf8_p.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D98FED9382022826E35B97EEAD364F0 /* utf8_p.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3E6C1AA62CA63A708E856A37B370255 /* tinycbor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1A84C12D2A01971890E8918AE557B49 /* tinycbor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D64F62EDAFD21B0FCFF072981F844893 /* DSSchemaModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C959A319DD0B38752FC90362528E7E45 /* DSSchemaModelBuilder.m */; };
+		D69802F61F44B507B738DD229ADA3B87 /* DSSchemaValidationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C597CDFB7B76ECAC449922D99E11D90D /* DSSchemaValidationResult.m */; };
+		D825E455E3EA2F604AD6994433A6AB10 /* Pods-ios-app_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E05CDDD1AD0086BF66C92175D475A7 /* Pods-ios-app_Tests-dummy.m */; };
+		DA2D7C24B16FC0099429317775EBE0BB /* DSSchemaHashUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A39B9C8E276E5A20F83D8AEFD9863061 /* DSSchemaHashUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAEB6DDB193C545611721B1EA4209486 /* DSJSONSchemaPVerValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D950D900DEB2ECA70C7475C7C51E959 /* DSJSONSchemaPVerValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDC784F434C2A2CAA4A848AC6301E49B /* DSJSONSchemaPVerValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC6265425B493C478543241F66AA01A /* DSJSONSchemaPVerValidator.m */; };
+		DDC90381C4BD44D0512E5585A3AAE664 /* tinycbor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8ABFDE2EDC0AED712EB848BAF01D2DB /* tinycbor.framework */; };
+		DEE1B9BE63154B6F253930DE6619C9AF /* DSJSONSchemaTypeValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCA123CAE537DFDBE90C5B9781B048B /* DSJSONSchemaTypeValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E609FD1E497968C5EF7E80C8B668EFCC /* DSSchemaStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = B4EDCA229E511B8986DF12B950E57185 /* DSSchemaStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB5372E45397A536CB352BDDE0A9B338 /* DSSchemaCompile.h in Headers */ = {isa = PBXBuildFile; fileRef = F34D32BE7664DFB8A8A8024C1DB245BD /* DSSchemaCompile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECC59FB15BC5D10DC8FF2479AF28978 /* DSJSONDictionarySchema.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DF51FFF8CCA02C6CB0CDAD7B7C3F6AD /* DSJSONDictionarySchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEF7C52D88E6111E084AED9BC6E503A1 /* open_memstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C73F6D32F0BFBC3E71541305E46A56B /* open_memstream.c */; };
+		EFAE9ECD216155B6155A3BFC1A8389A9 /* DSJSONSchemaEnumValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2929C534DA122FA34761E511738EE180 /* DSJSONSchemaEnumValidator.m */; };
+		F1B06714823DF59EC0E43614958F119B /* DSSchemaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C4152CCAD34425A8B5572C15EB5CF9F /* DSSchemaObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F250DD3CADE80C5824702F445088EC76 /* DSJSONSchemaDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC72B3B3917D3E0E4EFC6B84CDBA7B1 /* DSJSONSchemaDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F402D2CF35A98BFDE66525716E34A12C /* cborerrorstrings.c in Sources */ = {isa = PBXBuildFile; fileRef = C17D9BB5AE36FA6FFCEB9FC8AD8697C6 /* cborerrorstrings.c */; };
+		F52EFC4321307E363A1AE2C7E0844E36 /* NSAttributeDescription+DSSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = 791300268989267A0A811ED8477B1B76 /* NSAttributeDescription+DSSchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6C06404281687541F5C66D5A6A766FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3A128FC6503768305D6CCD6E425F23 /* Foundation.framework */; };
+		F81C0897AC78D2827FA171604CCD88AD /* DSSchemaCompile.m in Sources */ = {isa = PBXBuildFile; fileRef = 900A5DF2C015C5E48FC7FBE7A67200E0 /* DSSchemaCompile.m */; };
+		F8CE3096FB54676095601E4589437C7F /* DSSchemaPersistenceStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D456C61569EB0204F40F200B783CB0 /* DSSchemaPersistenceStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0CC6984E23F5F244D6C1A0C48F214D /* DSJSONBooleanSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7E5987BB53E9F1023CFBD67ED43A3B /* DSJSONBooleanSchema.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02A9807D3D202B3BC8578AFD3A84B3B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F08CA4EB4D6D3DABCF4EEEDA1943957;
+			remoteInfo = "ios-app-ios-app";
+		};
+		1A1CDF6A3ACBFD314CEB8209FE104E52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0AB05CE9A8D73BFCEB9D164B31550E8;
+			remoteInfo = tinycbor;
+		};
+		1C55A5BBA244ACB7555750BF5E39DA60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE8EB9B28DC0B30B6E7A51142D32EE14;
+			remoteInfo = DSJSONSchemaValidation;
+		};
+		5EC9A11221C88E4DEDFEE1D0096D6DCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0AB05CE9A8D73BFCEB9D164B31550E8;
+			remoteInfo = tinycbor;
+		};
+		87CC5F07AC3E3F75409A2193DB529EEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3674AF814573F446F46A99CF67795384;
+			remoteInfo = "Pods-ios-app_Example";
+		};
+		BC97B1B070B25A2548AA5A84FAF5573B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6044DD5812410029B1EAAE8B4D9D786B;
+			remoteInfo = TinyCborObjc;
+		};
+		C402E3E454854C7FEAD455777F69A666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE8EB9B28DC0B30B6E7A51142D32EE14;
+			remoteInfo = DSJSONSchemaValidation;
+		};
+		D02A949FBCC436307078B5DBFB738C9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6044DD5812410029B1EAAE8B4D9D786B;
+			remoteInfo = TinyCborObjc;
+		};
+		E31C06A4BD5CDEE1B96D0B79B2D224D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66C79AC26893DFC8CF0853BF953A5155;
+			remoteInfo = "ios-app";
+		};
+		F8F10538AEB477471CBDE159CB2062C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0AB05CE9A8D73BFCEB9D164B31550E8;
+			remoteInfo = tinycbor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		038B2197C9DE521AB1B10D5F4B1AF62E /* NSString+DSJSONPointer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+DSJSONPointer.h"; path = "DSJSONSchemaValidation/Categories/NSString+DSJSONPointer.h"; sourceTree = "<group>"; };
+		04AF9EF60C3C317731D14C1FE4EF7992 /* DSSchemaDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSSchemaDefinition.h; path = "ios-app/Classes/DSSchemaDefinition.h"; sourceTree = "<group>"; };
+		051F1C90E3952E1DFF0B50F68125419A /* DSJSONSchemaValidationContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaValidationContext.m; path = DSJSONSchemaValidation/DSJSONSchemaValidationContext.m; sourceTree = "<group>"; };
+		09E2025387F215D55536637B67BD4F4D /* DSJSONSchemaObjectValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaObjectValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaObjectValidator.h"; sourceTree = "<group>"; };
+		0AD85D57D618946467F09E9AA42F7668 /* schema_v7.json */ = {isa = PBXFileReference; includeInIndex = 1; name = schema_v7.json; path = "ios-app/Assets/schema_v7.json"; sourceTree = "<group>"; };
+		0BFED0EB5E8BC314CA2578E618D2DE83 /* DSJSONSchemaFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaFactory.m; path = DSJSONSchemaValidation/DSJSONSchemaFactory.m; sourceTree = "<group>"; };
+		0D77505860617F0B82C344376CE09DF9 /* DSJSONSchemaSpecification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaSpecification.h; path = DSJSONSchemaValidation/DSJSONSchemaSpecification.h; sourceTree = "<group>"; };
+		0E51F7964A5AF4AABFB361FB78B5F0F0 /* DSSchemaFees.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSSchemaFees.h; path = "ios-app/Classes/DSSchemaFees.h"; sourceTree = "<group>"; };
+		1263C161F8FBD7EC170D69E32C9D5925 /* cborjson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cborjson.h; path = src/cborjson.h; sourceTree = "<group>"; };
+		129D2EA3E440E863AF4FC2A13DBFBE35 /* tinycbor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "tinycbor-prefix.pch"; sourceTree = "<group>"; };
+		13FCC2C697930C65C96425DFA2923DE1 /* Pods-ios-app_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ios-app_Example-umbrella.h"; sourceTree = "<group>"; };
+		14521C4901952DC772B75378089C16F0 /* DSJSONSchemaContainsValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaContainsValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaContainsValidator.h"; sourceTree = "<group>"; };
+		1510D3B6887DD2471C3F90E7721731B4 /* cborparser_dup_string.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cborparser_dup_string.c; path = src/cborparser_dup_string.c; sourceTree = "<group>"; };
+		19B0EFF7551695A0FAFE0A03E38F0180 /* NSEntityDescription+DSSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSEntityDescription+DSSchema.h"; sourceTree = "<group>"; };
+		1C54B30DDE566E6C54013E08BA97FD1C /* TinyCborObjc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyCborObjc-umbrella.h"; sourceTree = "<group>"; };
+		1D677FE088DF906795C0D55DC6503B1C /* NSDictionary+DSJSONDeepMutableCopy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+DSJSONDeepMutableCopy.h"; path = "DSJSONSchemaValidation/Categories/NSDictionary+DSJSONDeepMutableCopy.h"; sourceTree = "<group>"; };
+		1FDB9938B70954BC0C6FD57D9E7E1CED /* ResourceBundle-ios-app-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ios-app-Info.plist"; sourceTree = "<group>"; };
+		205D8EC34C92F838C2EC2A7CB222B3AB /* DSJSONSchemaValidation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DSJSONSchemaValidation-dummy.m"; sourceTree = "<group>"; };
+		2081E87CC4010E385F6184787B270168 /* DSJSONSchemaConstValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaConstValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaConstValidator.h"; sourceTree = "<group>"; };
+		21F5DD0AABB1303C1B40FC04ECBD77CC /* Pods-ios-app_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios-app_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		232D454CFD6310092C2FFB32739942E1 /* DSJSONSchemaConditionalValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaConditionalValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaConditionalValidator.h"; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		25C1F175EEEBC81EB8D669814D581D68 /* NSObject+DSCborEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+DSCborEncoding.h"; path = "TinyCborObjc/NSObject+DSCborEncoding.h"; sourceTree = "<group>"; };
+		2929C534DA122FA34761E511738EE180 /* DSJSONSchemaEnumValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaEnumValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaEnumValidator.m"; sourceTree = "<group>"; };
+		2B1270FD3F1644363B5767D8660842C6 /* DSJSONSchemaNumericValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaNumericValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaNumericValidator.h"; sourceTree = "<group>"; };
+		2C73F6D32F0BFBC3E71541305E46A56B /* open_memstream.c */ = {isa = PBXFileReference; includeInIndex = 1; name = open_memstream.c; path = src/open_memstream.c; sourceTree = "<group>"; };
+		310A0C98D708775BE8BA6126D56D9D22 /* ios-app-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ios-app-dummy.m"; sourceTree = "<group>"; };
+		3149B83873D0339492CBA006744648CA /* DSSchemaHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSSchemaHash.m; path = "ios-app/Classes/DSSchemaHash.m"; sourceTree = "<group>"; };
+		368D71B5CCA159825D19EB10BA3BF9DD /* Pods-ios-app_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ios-app_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		36D4AAA589387947B47FD1A202012A74 /* DSJSONSchemaContentValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaContentValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaContentValidator.m"; sourceTree = "<group>"; };
+		3A0627FADB95FEA832C2B474BB27855B /* DSJSONSchemaReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaReference.m; path = DSJSONSchemaValidation/DSJSONSchemaReference.m; sourceTree = "<group>"; };
+		3B5DE20042F349BC9091FE49A414DA5C /* DSJSONSchemaArrayValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaArrayValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaArrayValidator.h"; sourceTree = "<group>"; };
+		3C757E378FDB9E7B2322217E2D1143FF /* Pods-ios-app_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ios-app_Tests.modulemap"; sourceTree = "<group>"; };
+		3C78ADBDA1B7257BE29FC862AA636B5C /* NSNumber+DSJSONNumberTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+DSJSONNumberTypes.m"; path = "DSJSONSchemaValidation/Categories/NSNumber+DSJSONNumberTypes.m"; sourceTree = "<group>"; };
+		3CCA123CAE537DFDBE90C5B9781B048B /* DSJSONSchemaTypeValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaTypeValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaTypeValidator.h"; sourceTree = "<group>"; };
+		3D7E5987BB53E9F1023CFBD67ED43A3B /* DSJSONBooleanSchema.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONBooleanSchema.m; path = DSJSONSchemaValidation/DSJSONBooleanSchema.m; sourceTree = "<group>"; };
+		4157AEE4413D21B4AC036D8E94AE75F5 /* DSSchemaHashUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DSSchemaHashUtils.m; sourceTree = "<group>"; };
+		415E8637967EB0A6D9660EF9BB0E8115 /* Pods-ios-app_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ios-app_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		428FAA41F6778658E3BFEC24C78DCC43 /* Pods-ios-app_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ios-app_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		4408170ECFD20552FAD7EC5A6DF36490 /* DSSchemaJSONSchemaUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DSSchemaJSONSchemaUtils.m; sourceTree = "<group>"; };
+		4552623C798FD67BB431A5550971C750 /* DSJSONSchemaValidationOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaValidationOptions.m; path = DSJSONSchemaValidation/DSJSONSchemaValidationOptions.m; sourceTree = "<group>"; };
+		459E940220C9F0DFA3A50EEB5F9107C3 /* DSJSONSchema+StandardValidators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DSJSONSchema+StandardValidators.h"; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchema+StandardValidators.h"; sourceTree = "<group>"; };
+		45DC1E44EED7A921A0B2A4967630C8AB /* NSDictionary+DSJSONComparison.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+DSJSONComparison.h"; path = "DSJSONSchemaValidation/Categories/NSDictionary+DSJSONComparison.h"; sourceTree = "<group>"; };
+		45E424C9E5F2314D41D6505FB7AA0C74 /* ios-app-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ios-app-umbrella.h"; sourceTree = "<group>"; };
+		486D9EA0A54D395A27F1A46B909E2112 /* DSJSONSchemaConstValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaConstValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaConstValidator.m"; sourceTree = "<group>"; };
+		49639E8756C74CCEEFB535D0A2868E08 /* NSURL+DSJSONReferencing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+DSJSONReferencing.m"; path = "DSJSONSchemaValidation/Categories/NSURL+DSJSONReferencing.m"; sourceTree = "<group>"; };
+		4AE84D314C3E027C501BA37205A074F4 /* tinycbor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = tinycbor.modulemap; sourceTree = "<group>"; };
+		4B76EA03EBD6F7779A763D1329F22946 /* DSSchemaModelBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSSchemaModelBuilder.h; sourceTree = "<group>"; };
+		4BBA51B118C767B2630E4E058626436B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C4152CCAD34425A8B5572C15EB5CF9F /* DSSchemaObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSSchemaObject.h; path = "ios-app/Classes/DSSchemaObject.h"; sourceTree = "<group>"; };
+		4E1915FFAFFD5009A775613E903C737C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E62B26D9A482FD5B5719850E0723990 /* TinyCborObjc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyCborObjc.xcconfig; sourceTree = "<group>"; };
+		4E73C99D22132FD2EB7B0BEB931B04E4 /* DSJSONSchemaValidationContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaValidationContext.h; path = DSJSONSchemaValidation/DSJSONSchemaValidationContext.h; sourceTree = "<group>"; };
+		4F1A64A2D704E5F65EC1A2E6A45D27A3 /* DSSchemaJSONSchemaUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSSchemaJSONSchemaUtils.h; sourceTree = "<group>"; };
+		5167E87B0ECA0A96C7CBABF2CEACA8E9 /* DSJSONSchemaNumericValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaNumericValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaNumericValidator.m"; sourceTree = "<group>"; };
+		526A023FE2A2263837BFD1534727C112 /* NSURL+DSJSONReferencing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+DSJSONReferencing.h"; path = "DSJSONSchemaValidation/Categories/NSURL+DSJSONReferencing.h"; sourceTree = "<group>"; };
+		55CB5DF243E9F4FC545CE56136D44090 /* DSSchemaDefinition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSSchemaDefinition.m; path = "ios-app/Classes/DSSchemaDefinition.m"; sourceTree = "<group>"; };
+		55D456C61569EB0204F40F200B783CB0 /* DSSchemaPersistenceStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSSchemaPersistenceStack.h; sourceTree = "<group>"; };
+		5650F26771DCA8FFBAB10827956401C6 /* DSJSONSchemaPropertyNamesValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaPropertyNamesValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaPropertyNamesValidator.m"; sourceTree = "<group>"; };
+		577A369099E979FDBB9D69F6CA51838E /* DSJSONSchemaValidation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DSJSONSchemaValidation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57E88B1B448F771AC866567FD1B392E4 /* tinycbor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "tinycbor-dummy.m"; sourceTree = "<group>"; };
+		5BD8DCC404E0C1F7526233B99EF02892 /* NSBundle+DSSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+DSSchema.h"; sourceTree = "<group>"; };
+		5C7C36C38E0705C9B2DC4C9847EDE42E /* Pods-ios-app_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ios-app_Example.modulemap"; sourceTree = "<group>"; };
+		5D98FED9382022826E35B97EEAD364F0 /* utf8_p.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utf8_p.h; path = src/utf8_p.h; sourceTree = "<group>"; };
+		5E493B3D29A7FB56396946F1C81000A7 /* cbortojson.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cbortojson.c; path = src/cbortojson.c; sourceTree = "<group>"; };
+		5E826861F7C74F8CDD8404F99F39C344 /* DSJSONSchema+AxeSchema.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DSJSONSchema+AxeSchema.m"; sourceTree = "<group>"; };
+		61537976A64306E54C7561D1354A7B09 /* cborpretty_stdio.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cborpretty_stdio.c; path = src/cborpretty_stdio.c; sourceTree = "<group>"; };
+		61C565C845D8780A071894444BB2734D /* Pods-ios-app_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ios-app_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		629AA99212322FC2D60FFDB87E63D52F /* ios-app.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = "ios-app.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		63216D1CCEE895BAE4D2AD941387AC8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C51E02395EAC4F4F499FB35F459DE4 /* NSAttributeDescription+DSSchema.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSAttributeDescription+DSSchema.m"; sourceTree = "<group>"; };
+		66DA9DFB363E6DE73E23F755501BED57 /* NSObject+DSJSONComparison.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+DSJSONComparison.m"; path = "DSJSONSchemaValidation/Categories/NSObject+DSJSONComparison.m"; sourceTree = "<group>"; };
+		68A58325EB16A2D9A39ADE92937F471E /* Pods-ios-app_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ios-app_Tests-umbrella.h"; sourceTree = "<group>"; };
+		68DA05D1DA062E39D06746181A687B9C /* DSSchemaValidationResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSSchemaValidationResult.h; path = "ios-app/Classes/DSSchemaValidationResult.h"; sourceTree = "<group>"; };
+		694C7433A6A4A2E32948A7EFBDAFA407 /* DSJSONSchemaStringValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaStringValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaStringValidator.h"; sourceTree = "<group>"; };
+		695B52AB7665FD92C4EA19712852DCFC /* DSJSONSchemaValidation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DSJSONSchemaValidation.modulemap; sourceTree = "<group>"; };
+		69851DD111510F8FE6FEE29E2321332F /* NSDictionary+DSJSONDeepMutableCopy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+DSJSONDeepMutableCopy.m"; path = "DSJSONSchemaValidation/Categories/NSDictionary+DSJSONDeepMutableCopy.m"; sourceTree = "<group>"; };
+		6AF9F6A68195C7921ECF4C13EBE450E7 /* DSJSONSchemaValidation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DSJSONSchemaValidation.framework; path = DSJSONSchemaValidation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBC86DC35993F836D5319B996817772 /* DSJSONSchemaEnumValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaEnumValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaEnumValidator.h"; sourceTree = "<group>"; };
+		6F69CF0581FA4E43A0848FB8F4B8759E /* cbor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cbor.h; path = src/cbor.h; sourceTree = "<group>"; };
+		6FE9308A50400B141AFE9B3088307CA5 /* cborencoder_close_container_checked.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cborencoder_close_container_checked.c; path = src/cborencoder_close_container_checked.c; sourceTree = "<group>"; };
+		702D9F8DE14210FA572FEC28D569AD1C /* DSSchemaFees.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSSchemaFees.m; path = "ios-app/Classes/DSSchemaFees.m"; sourceTree = "<group>"; };
+		709D14814DCFBFDD38CC348ECEA79627 /* DSSchemaValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSSchemaValidator.h; path = "ios-app/Classes/DSSchemaValidator.h"; sourceTree = "<group>"; };
+		70F7EB824F781090BDD0D05F9C5A8A04 /* NSArray+DSJSONComparison.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+DSJSONComparison.m"; path = "DSJSONSchemaValidation/Categories/NSArray+DSJSONComparison.m"; sourceTree = "<group>"; };
+		71C6BC6DA7D4B8DDBE71593F5EE0BCD1 /* DSJSONSchemaContentValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaContentValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaContentValidator.h"; sourceTree = "<group>"; };
+		7705E0642F4380C2729092C0978C46DF /* NSData+DSSchemaUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+DSSchemaUtils.h"; sourceTree = "<group>"; };
+		791300268989267A0A811ED8477B1B76 /* NSAttributeDescription+DSSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+DSSchema.h"; sourceTree = "<group>"; };
+		791428536F62DD79E4B8286BE53F1788 /* Pods-ios-app_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ios-app_Example-dummy.m"; sourceTree = "<group>"; };
+		7E048DEC2552FEBB4D25E1959C7879BE /* Pods_ios_app_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ios_app_Example.framework; path = "Pods-ios-app_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F28A77845B09136959A0EB964D14F46 /* DSJSONSchemaStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaStorage.m; path = DSJSONSchemaValidation/DSJSONSchemaStorage.m; sourceTree = "<group>"; };
+		7F72799345180301843F79FDF4A7BD61 /* DSJSONSchemaFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaFactory.h; path = DSJSONSchemaValidation/DSJSONSchemaFactory.h; sourceTree = "<group>"; };
+		811CAD6D6D3E67D8B172FA4650DC5202 /* Pods-ios-app_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios-app_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		84A043812FDFD96FEE3B67BD22C5BD7E /* tinycbor-version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "tinycbor-version.h"; path = "src/tinycbor-version.h"; sourceTree = "<group>"; };
+		8597DF0C20C9FBEEDBE1BF0DC1A95725 /* DSJSONSchemaDependenciesValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaDependenciesValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaDependenciesValidator.h"; sourceTree = "<group>"; };
+		85F895127014AAE6D922DE81742E98E0 /* DSJSONSchemaContainsValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaContainsValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaContainsValidator.m"; sourceTree = "<group>"; };
+		8724AFC58D3E8BA86B1747EE8E133C52 /* DSJSONSchemaObjectPropertiesValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaObjectPropertiesValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaObjectPropertiesValidator.m"; sourceTree = "<group>"; };
+		878D73A86E08CCC776528F71955B6B4B /* DSJSONSchemaConditionalValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaConditionalValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaConditionalValidator.m"; sourceTree = "<group>"; };
+		8815334CFC582E9364F505B4F132D280 /* NSData+DSSchemaUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+DSSchemaUtils.m"; sourceTree = "<group>"; };
+		88ABFBCA585211A7AB5E3E6C9D0DFF2F /* DSJSONSchemaDependenciesValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaDependenciesValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaDependenciesValidator.m"; sourceTree = "<group>"; };
+		88E05CDDD1AD0086BF66C92175D475A7 /* Pods-ios-app_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ios-app_Tests-dummy.m"; sourceTree = "<group>"; };
+		8A3A128FC6503768305D6CCD6E425F23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8BA50206FB9EAAAA682F256E60427765 /* DSJSONSchemaValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaValidator.h; path = DSJSONSchemaValidation/DSJSONSchemaValidator.h; sourceTree = "<group>"; };
+		8D80C87473DBF1AA7D321D9584B1A9FA /* Pods_ios_app_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ios_app_Tests.framework; path = "Pods-ios-app_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D950D900DEB2ECA70C7475C7C51E959 /* DSJSONSchemaPVerValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSJSONSchemaPVerValidator.h; sourceTree = "<group>"; };
+		8ED019DE8731B20F4D2D335CF697E975 /* DSJSONSchemaFormatValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaFormatValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaFormatValidator.m"; sourceTree = "<group>"; };
+		8FAAA4BBAB456501E11BC9016009FCF7 /* DSJSONSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchema.h; path = DSJSONSchemaValidation/DSJSONSchema.h; sourceTree = "<group>"; };
+		900A5DF2C015C5E48FC7FBE7A67200E0 /* DSSchemaCompile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSSchemaCompile.m; path = "ios-app/Classes/DSSchemaCompile.m"; sourceTree = "<group>"; };
+		9030A1E6E9B9330F7BA3E2603437327C /* DSJSONBooleanSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONBooleanSchema.h; path = DSJSONSchemaValidation/DSJSONBooleanSchema.h; sourceTree = "<group>"; };
+		91B852AD192A6ED1C08151A9792826DF /* DSSchemaPersistenceStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DSSchemaPersistenceStack.m; sourceTree = "<group>"; };
+		9269EF5D617EF98D13120E6E179DDBE1 /* TinyCborObjc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyCborObjc-prefix.pch"; sourceTree = "<group>"; };
+		92B2FFDFF4A30CE86B1E1ECD9AF0F228 /* cborparser.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cborparser.c; path = src/cborparser.c; sourceTree = "<group>"; };
+		931DCBF164D39FA3FDDCD314695925F6 /* DSJSONSchemaValidation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DSJSONSchemaValidation-prefix.pch"; sourceTree = "<group>"; };
+		974694F981EB7E0DAE512BBB63C38ACF /* ios-app.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ios-app.bundle"; path = "ios-app-ios-app.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F92E97CEBFE5C578A37729EB5C1EB1 /* Pods-ios-app_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ios-app_Tests-resources.sh"; sourceTree = "<group>"; };
+		98C43FF5859842A02B3692288A515A8B /* ios-app.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ios-app.xcconfig"; sourceTree = "<group>"; };
+		9B4511569874FED2D17E56D4B2EF0200 /* cborinternal_p.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cborinternal_p.h; path = src/cborinternal_p.h; sourceTree = "<group>"; };
+		9DF51FFF8CCA02C6CB0CDAD7B7C3F6AD /* DSJSONDictionarySchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONDictionarySchema.h; path = DSJSONSchemaValidation/DSJSONDictionarySchema.h; sourceTree = "<group>"; };
+		9ECFFBD55588E17C5C094EC9B90B9FAF /* DSSchemaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSSchemaObject.m; path = "ios-app/Classes/DSSchemaObject.m"; sourceTree = "<group>"; };
+		9EE0A709FB2FBFFF2105093A01C1DEB0 /* compilersupport_p.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = compilersupport_p.h; path = src/compilersupport_p.h; sourceTree = "<group>"; };
+		9F0A596CC118ED8488A7BB13D6AB135F /* TinyCborObjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TinyCborObjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D53CF6FA9E01BCB623CD9DCD2CE488 /* DSJSONSchemaPropertyNamesValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaPropertyNamesValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaPropertyNamesValidator.h"; sourceTree = "<group>"; };
+		A22D86FCC7253051D313864BD228FDD3 /* ios-app-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ios-app-prefix.pch"; sourceTree = "<group>"; };
+		A26ACBE1AC7445D64D26EDE6FBA6D744 /* tinycbor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = tinycbor.xcconfig; sourceTree = "<group>"; };
+		A2B8D42841655F2D3D3688EF3C629029 /* DSSchemaHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSSchemaHash.h; path = "ios-app/Classes/DSSchemaHash.h"; sourceTree = "<group>"; };
+		A39A3DD725F8141EC32C8B05102D0B9C /* DSJSONSchemaCombiningValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaCombiningValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaCombiningValidator.h"; sourceTree = "<group>"; };
+		A39B9C8E276E5A20F83D8AEFD9863061 /* DSSchemaHashUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSSchemaHashUtils.h; sourceTree = "<group>"; };
+		A4AD573FC098D83FF90A708222426A65 /* DSJSONSchemaValidationOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaValidationOptions.h; path = DSJSONSchemaValidation/DSJSONSchemaValidationOptions.h; sourceTree = "<group>"; };
+		A66407F208BDBCCC391DFDA655895DC2 /* DSJSONSchemaSpecification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaSpecification.m; path = DSJSONSchemaValidation/DSJSONSchemaSpecification.m; sourceTree = "<group>"; };
+		A86CA9442573EB6E94A7C7B4DE9757B4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC63DAE6906394E6D36389A186A8018B /* APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = APP.framework; path = "ios-app.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD151AF3457095E5A14D1C0BA97C0024 /* Pods-ios-app_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ios-app_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AD1FF0A5B68C8AC8D88C65872FA57B2D /* DSJSONDictionarySchema.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONDictionarySchema.m; path = DSJSONSchemaValidation/DSJSONDictionarySchema.m; sourceTree = "<group>"; };
+		AE716FD59602EA53E0EAA66C8E0AEABE /* DSSchemaStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSSchemaStorage.m; path = "ios-app/Classes/DSSchemaStorage.m"; sourceTree = "<group>"; };
+		B0C03776AD5AFB93E05E549704636129 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B2669EB13F681686AFAABE01308FE542 /* NSEntityDescription+DSSchema.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSEntityDescription+DSSchema.m"; sourceTree = "<group>"; };
+		B4EDCA229E511B8986DF12B950E57185 /* DSSchemaStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSSchemaStorage.h; path = "ios-app/Classes/DSSchemaStorage.h"; sourceTree = "<group>"; };
+		B7464BD15ABC075A5543026A30EFB998 /* DSJSONSchemaObjectValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaObjectValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaObjectValidator.m"; sourceTree = "<group>"; };
+		B91DF460D4C1F3B045A4CE2C71FB8C17 /* cborpretty.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cborpretty.c; path = src/cborpretty.c; sourceTree = "<group>"; };
+		B9E23269742770CFEB2C6CD2FF1CA8F3 /* DSJSONSchemaStringValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaStringValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaStringValidator.m"; sourceTree = "<group>"; };
+		BA60F134F6F6483693DDE1B6BABDC8E3 /* DSJSONSchemaDefinitions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaDefinitions.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaDefinitions.m"; sourceTree = "<group>"; };
+		BAA251B59B7BE03D0FE23A48171C4F37 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD216392FBE0824AC97C32107F939E69 /* DSJSONSchemaErrors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaErrors.m; path = DSJSONSchemaValidation/DSJSONSchemaErrors.m; sourceTree = "<group>"; };
+		BFCAA48A9655DFD7FB772E27FBC095FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C11208A27A2A4FF3F6999CE50F3F05AB /* DSJSONSchemaFormatValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaFormatValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaFormatValidator.h"; sourceTree = "<group>"; };
+		C17D9BB5AE36FA6FFCEB9FC8AD8697C6 /* cborerrorstrings.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cborerrorstrings.c; path = src/cborerrorstrings.c; sourceTree = "<group>"; };
+		C1A84C12D2A01971890E8918AE557B49 /* tinycbor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "tinycbor-umbrella.h"; sourceTree = "<group>"; };
+		C1F9EE94AEE6A3FD69BD8B4007C83937 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C597CDFB7B76ECAC449922D99E11D90D /* DSSchemaValidationResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSSchemaValidationResult.m; path = "ios-app/Classes/DSSchemaValidationResult.m"; sourceTree = "<group>"; };
+		C5B4A553667D7E6B91A25DCA4DC066A8 /* NSObject+DSJSONComparison.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+DSJSONComparison.h"; path = "DSJSONSchemaValidation/Categories/NSObject+DSJSONComparison.h"; sourceTree = "<group>"; };
+		C71F9A4A1FECC08D539270314F606350 /* DSJSONSchemaArrayItemsValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaArrayItemsValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaArrayItemsValidator.h"; sourceTree = "<group>"; };
+		C7B78CD408F8CD44E4CA576226CAF6E5 /* DSJSONSchemaArrayValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaArrayValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaArrayValidator.m"; sourceTree = "<group>"; };
+		C8ABFDE2EDC0AED712EB848BAF01D2DB /* tinycbor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = tinycbor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C959A319DD0B38752FC90362528E7E45 /* DSSchemaModelBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DSSchemaModelBuilder.m; sourceTree = "<group>"; };
+		CBC72B3B3917D3E0E4EFC6B84CDBA7B1 /* DSJSONSchemaDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaDefinitions.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaDefinitions.h"; sourceTree = "<group>"; };
+		CE23AC2549B8AD81F7539B9C978F5DF7 /* DSJSONSchemaValidation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DSJSONSchemaValidation.xcconfig; sourceTree = "<group>"; };
+		D1B9ED09682D2F8B3CEAAFD928E4B071 /* DSJSONSchemaValidation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DSJSONSchemaValidation-umbrella.h"; sourceTree = "<group>"; };
+		D21E3759C7601945F947E40D1B3CCAA5 /* TinyCborObjc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TinyCborObjc.modulemap; sourceTree = "<group>"; };
+		D687B9CC2393D64DF1774D4A03D514DA /* TinyCborObjc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TinyCborObjc-dummy.m"; sourceTree = "<group>"; };
+		D6885DC37D9D9744A468852E4C9567B2 /* NSObject+DSCborEncoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+DSCborEncoding.m"; path = "TinyCborObjc/NSObject+DSCborEncoding.m"; sourceTree = "<group>"; };
+		D8EC4239160693DAC6D1F26BB092354B /* cborencoder.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cborencoder.c; path = src/cborencoder.c; sourceTree = "<group>"; };
+		DDC6265425B493C478543241F66AA01A /* DSJSONSchemaPVerValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DSJSONSchemaPVerValidator.m; sourceTree = "<group>"; };
+		DDD0525D4AA96C546C830E187BA32AE2 /* NSString+DSJSONPointer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+DSJSONPointer.m"; path = "DSJSONSchemaValidation/Categories/NSString+DSJSONPointer.m"; sourceTree = "<group>"; };
+		DEA23BE82CF092A934AD7042AB9D646F /* DSJSONSchemaObjectPropertiesValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaObjectPropertiesValidator.h; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaObjectPropertiesValidator.h"; sourceTree = "<group>"; };
+		E2EBE31107E217F874F152117C7A5F09 /* DSJSONSchema+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DSJSONSchema+Protected.h"; path = "DSJSONSchemaValidation/DSJSONSchema+Protected.h"; sourceTree = "<group>"; };
+		E3BB65311C2AA163AC35E1C8E277F1C3 /* DSJSONSchemaCombiningValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaCombiningValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaCombiningValidator.m"; sourceTree = "<group>"; };
+		E7337BD9AC093BD3A45AD856902BD9AC /* ios-app.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ios-app.modulemap"; sourceTree = "<group>"; };
+		E76F00FD1E236F78404AF21D5E14141B /* NSDictionary+DSJSONComparison.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+DSJSONComparison.m"; path = "DSJSONSchemaValidation/Categories/NSDictionary+DSJSONComparison.m"; sourceTree = "<group>"; };
+		E7E12F850525C2B5AB5029EB5B6D39CA /* axe_system_schema.json */ = {isa = PBXFileReference; includeInIndex = 1; name = axe_system_schema.json; path = "ios-app/Assets/axe_system_schema.json"; sourceTree = "<group>"; };
+		E7FF8211908E25952BF00B489A5DC489 /* DSJSONSchema+StandardValidators.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DSJSONSchema+StandardValidators.m"; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchema+StandardValidators.m"; sourceTree = "<group>"; };
+		E852C1B79E7E8B0B99325A9F0BAF00D8 /* cborvalidation.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cborvalidation.c; path = src/cborvalidation.c; sourceTree = "<group>"; };
+		E9FD936B48C65810C828DFE84192A7A1 /* DSJSONSchemaReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaReference.h; path = DSJSONSchemaValidation/DSJSONSchemaReference.h; sourceTree = "<group>"; };
+		EB577F7B41F9E6C1F09BBA94FF3CB835 /* DSJSONSchema+AxeSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DSJSONSchema+AxeSchema.h"; sourceTree = "<group>"; };
+		EE54466290B682217252880C99EDC072 /* Pods-ios-app_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ios-app_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F01166103033A3CBF2049A6C00F6B94C /* tinycbor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = tinycbor.framework; path = tinycbor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34D32BE7664DFB8A8A8024C1DB245BD /* DSSchemaCompile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSSchemaCompile.h; path = "ios-app/Classes/DSSchemaCompile.h"; sourceTree = "<group>"; };
+		F40CE05769823523E4188AB523408104 /* DSJSONSchemaTypeValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaTypeValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaTypeValidator.m"; sourceTree = "<group>"; };
+		F5AB84AA33D3B04778D20ACDEE992DEF /* DSSchemaValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSSchemaValidator.m; path = "ios-app/Classes/DSSchemaValidator.m"; sourceTree = "<group>"; };
+		F75250CCD418687BCAFA1BFE13D099B8 /* Pods-ios-app_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios-app_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F7697E298BC85A4B9272F0C1DFA97823 /* Pods-ios-app_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ios-app_Example-resources.sh"; sourceTree = "<group>"; };
+		F7DBC7DEEB49861B2B106AAA4F45C923 /* TinyCborObjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TinyCborObjc.framework; path = TinyCborObjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9368BEE4EFF78551A89FD70B1B5AD64 /* Pods-ios-app_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios-app_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F94BD00658783896494EA98ABF8EA5FE /* NSArray+DSJSONComparison.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+DSJSONComparison.h"; path = "DSJSONSchemaValidation/Categories/NSArray+DSJSONComparison.h"; sourceTree = "<group>"; };
+		F9BF6A19EE0096501FEC51B25E12716D /* NSBundle+DSSchema.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+DSSchema.m"; sourceTree = "<group>"; };
+		FB9781D7EB21B109CF1B641A300DB153 /* DSJSONSchemaStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaStorage.h; path = DSJSONSchemaValidation/DSJSONSchemaStorage.h; sourceTree = "<group>"; };
+		FC355AC167517DF316254830B26BA409 /* DSJSONSchema.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchema.m; path = DSJSONSchemaValidation/DSJSONSchema.m; sourceTree = "<group>"; };
+		FCBF1F12BC047598D7F5605C1EDF3CA6 /* NSNumber+DSJSONNumberTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+DSJSONNumberTypes.h"; path = "DSJSONSchemaValidation/Categories/NSNumber+DSJSONNumberTypes.h"; sourceTree = "<group>"; };
+		FDC230E84E016C53B5EE469909B17FE5 /* DSJSONSchemaErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSJSONSchemaErrors.h; path = DSJSONSchemaValidation/DSJSONSchemaErrors.h; sourceTree = "<group>"; };
+		FE9F348D14E6AA286D9A70B55071C8E0 /* DSJSONSchemaArrayItemsValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSJSONSchemaArrayItemsValidator.m; path = "DSJSONSchemaValidation/Standard Validators/DSJSONSchemaArrayItemsValidator.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D969A4CA0E11819E03D183C02F3C64C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83815F16D5E1F4093580F1EF02E363AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF041ADCEBC9D066934C9B5452C25BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B71F43DBD11DC5D3F9A3890A4D31D758 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4911111B71E9BE333B5EF51AEB26CD7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7990C1C4A11689D6E8497B6E23460AB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDE7F2F3C1F249447BB81CCFE50BDF9 /* DSJSONSchemaValidation.framework in Frameworks */,
+				F6C06404281687541F5C66D5A6A766FE /* Foundation.framework in Frameworks */,
+				502292D5E2BB829B14E673DFAC3E2FDD /* tinycbor.framework in Frameworks */,
+				B3435BD091E6336D8A6C4CBE8D741FF6 /* TinyCborObjc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D08864E9BB04929F03EC883557E8C01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84660DB06E344C12235987CFE39F983F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2916F3D67E7EFAFC933656813DE34D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AEFD1492126B3FE1D67058B7FD4AE56 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C866960CAE7CD9CA2A3901D5DF3BAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8C5E18B9E4AB11472AEBC322EF7325 /* Foundation.framework in Frameworks */,
+				DDC90381C4BD44D0512E5585A3AAE664 /* tinycbor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		133336594074E4BEAD14AF83B071842B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				629AA99212322FC2D60FFDB87E63D52F /* ios-app.podspec */,
+				BFCAA48A9655DFD7FB772E27FBC095FB /* LICENSE */,
+				B0C03776AD5AFB93E05E549704636129 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		14B60B4E7364F7B066D7FE36D5D95BFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				577A369099E979FDBB9D69F6CA51838E /* DSJSONSchemaValidation.framework */,
+				C8ABFDE2EDC0AED712EB848BAF01D2DB /* tinycbor.framework */,
+				9F0A596CC118ED8488A7BB13D6AB135F /* TinyCborObjc.framework */,
+				86FE615E4CEEF7931601A1B491123ADD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AC7124A829078D9E7F13F1AA23B24FC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A39B9C8E276E5A20F83D8AEFD9863061 /* DSSchemaHashUtils.h */,
+				4157AEE4413D21B4AC036D8E94AE75F5 /* DSSchemaHashUtils.m */,
+				4F1A64A2D704E5F65EC1A2E6A45D27A3 /* DSSchemaJSONSchemaUtils.h */,
+				4408170ECFD20552FAD7EC5A6DF36490 /* DSSchemaJSONSchemaUtils.m */,
+				5BD8DCC404E0C1F7526233B99EF02892 /* NSBundle+DSSchema.h */,
+				F9BF6A19EE0096501FEC51B25E12716D /* NSBundle+DSSchema.m */,
+				7705E0642F4380C2729092C0978C46DF /* NSData+DSSchemaUtils.h */,
+				8815334CFC582E9364F505B4F132D280 /* NSData+DSSchemaUtils.m */,
+				FF4EA093664D42E865F4342414E281F3 /* JSONSchemaExtensions */,
+			);
+			name = Utils;
+			path = "ios-app/Classes/Utils";
+			sourceTree = "<group>";
+		};
+		375803CF9CA820C2805346AE1E29241B /* Pods-ios-app_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BAA251B59B7BE03D0FE23A48171C4F37 /* Info.plist */,
+				3C757E378FDB9E7B2322217E2D1143FF /* Pods-ios-app_Tests.modulemap */,
+				61C565C845D8780A071894444BB2734D /* Pods-ios-app_Tests-acknowledgements.markdown */,
+				415E8637967EB0A6D9660EF9BB0E8115 /* Pods-ios-app_Tests-acknowledgements.plist */,
+				88E05CDDD1AD0086BF66C92175D475A7 /* Pods-ios-app_Tests-dummy.m */,
+				368D71B5CCA159825D19EB10BA3BF9DD /* Pods-ios-app_Tests-frameworks.sh */,
+				97F92E97CEBFE5C578A37729EB5C1EB1 /* Pods-ios-app_Tests-resources.sh */,
+				68A58325EB16A2D9A39ADE92937F471E /* Pods-ios-app_Tests-umbrella.h */,
+				21F5DD0AABB1303C1B40FC04ECBD77CC /* Pods-ios-app_Tests.debug.xcconfig */,
+				F75250CCD418687BCAFA1BFE13D099B8 /* Pods-ios-app_Tests.release.xcconfig */,
+			);
+			name = "Pods-ios-app_Tests";
+			path = "Target Support Files/Pods-ios-app_Tests";
+			sourceTree = "<group>";
+		};
+		397A818678B1509F15D53C2BE4B0B657 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				695B52AB7665FD92C4EA19712852DCFC /* DSJSONSchemaValidation.modulemap */,
+				CE23AC2549B8AD81F7539B9C978F5DF7 /* DSJSONSchemaValidation.xcconfig */,
+				205D8EC34C92F838C2EC2A7CB222B3AB /* DSJSONSchemaValidation-dummy.m */,
+				931DCBF164D39FA3FDDCD314695925F6 /* DSJSONSchemaValidation-prefix.pch */,
+				D1B9ED09682D2F8B3CEAAFD928E4B071 /* DSJSONSchemaValidation-umbrella.h */,
+				4BBA51B118C767B2630E4E058626436B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DSJSONSchemaValidation";
+			sourceTree = "<group>";
+		};
+		5A8184A073B0E4C07CDB3557DDC8F4CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E7E12F850525C2B5AB5029EB5B6D39CA /* axe_system_schema.json */,
+				0AD85D57D618946467F09E9AA42F7668 /* schema_v7.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6075A10B921812134CC2D443A8E13BA3 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				4B76EA03EBD6F7779A763D1329F22946 /* DSSchemaModelBuilder.h */,
+				C959A319DD0B38752FC90362528E7E45 /* DSSchemaModelBuilder.m */,
+				55D456C61569EB0204F40F200B783CB0 /* DSSchemaPersistenceStack.h */,
+				91B852AD192A6ED1C08151A9792826DF /* DSSchemaPersistenceStack.m */,
+				791300268989267A0A811ED8477B1B76 /* NSAttributeDescription+DSSchema.h */,
+				63C51E02395EAC4F4F499FB35F459DE4 /* NSAttributeDescription+DSSchema.m */,
+				19B0EFF7551695A0FAFE0A03E38F0180 /* NSEntityDescription+DSSchema.h */,
+				B2669EB13F681686AFAABE01308FE542 /* NSEntityDescription+DSSchema.m */,
+			);
+			name = Persistence;
+			path = "ios-app/Classes/Persistence";
+			sourceTree = "<group>";
+		};
+		6DFBE3F8439892FD26A4AA6DE62FF0B9 /* Pods-ios-app_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A86CA9442573EB6E94A7C7B4DE9757B4 /* Info.plist */,
+				5C7C36C38E0705C9B2DC4C9847EDE42E /* Pods-ios-app_Example.modulemap */,
+				AD151AF3457095E5A14D1C0BA97C0024 /* Pods-ios-app_Example-acknowledgements.markdown */,
+				428FAA41F6778658E3BFEC24C78DCC43 /* Pods-ios-app_Example-acknowledgements.plist */,
+				791428536F62DD79E4B8286BE53F1788 /* Pods-ios-app_Example-dummy.m */,
+				EE54466290B682217252880C99EDC072 /* Pods-ios-app_Example-frameworks.sh */,
+				F7697E298BC85A4B9272F0C1DFA97823 /* Pods-ios-app_Example-resources.sh */,
+				13FCC2C697930C65C96425DFA2923DE1 /* Pods-ios-app_Example-umbrella.h */,
+				811CAD6D6D3E67D8B172FA4650DC5202 /* Pods-ios-app_Example.debug.xcconfig */,
+				F9368BEE4EFF78551A89FD70B1B5AD64 /* Pods-ios-app_Example.release.xcconfig */,
+			);
+			name = "Pods-ios-app_Example";
+			path = "Target Support Files/Pods-ios-app_Example";
+			sourceTree = "<group>";
+		};
+		84F5C357501044CB7085EC40F8956ADF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86F758B02B8EE9C13A07B213A33A0E04 /* DSJSONSchemaValidation */,
+				90550479F59DA00613B448787987D0F6 /* tinycbor */,
+				CB13E9FFF42F9BB670FAC826700393C1 /* TinyCborObjc */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		869424BEE35D3ED5C44B02A63099BC3E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F4C96D0DF20CE4044BC6F2DB57C227D /* ios-app */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		86F758B02B8EE9C13A07B213A33A0E04 /* DSJSONSchemaValidation */ = {
+			isa = PBXGroup;
+			children = (
+				9030A1E6E9B9330F7BA3E2603437327C /* DSJSONBooleanSchema.h */,
+				3D7E5987BB53E9F1023CFBD67ED43A3B /* DSJSONBooleanSchema.m */,
+				9DF51FFF8CCA02C6CB0CDAD7B7C3F6AD /* DSJSONDictionarySchema.h */,
+				AD1FF0A5B68C8AC8D88C65872FA57B2D /* DSJSONDictionarySchema.m */,
+				8FAAA4BBAB456501E11BC9016009FCF7 /* DSJSONSchema.h */,
+				FC355AC167517DF316254830B26BA409 /* DSJSONSchema.m */,
+				E2EBE31107E217F874F152117C7A5F09 /* DSJSONSchema+Protected.h */,
+				459E940220C9F0DFA3A50EEB5F9107C3 /* DSJSONSchema+StandardValidators.h */,
+				E7FF8211908E25952BF00B489A5DC489 /* DSJSONSchema+StandardValidators.m */,
+				C71F9A4A1FECC08D539270314F606350 /* DSJSONSchemaArrayItemsValidator.h */,
+				FE9F348D14E6AA286D9A70B55071C8E0 /* DSJSONSchemaArrayItemsValidator.m */,
+				3B5DE20042F349BC9091FE49A414DA5C /* DSJSONSchemaArrayValidator.h */,
+				C7B78CD408F8CD44E4CA576226CAF6E5 /* DSJSONSchemaArrayValidator.m */,
+				A39A3DD725F8141EC32C8B05102D0B9C /* DSJSONSchemaCombiningValidator.h */,
+				E3BB65311C2AA163AC35E1C8E277F1C3 /* DSJSONSchemaCombiningValidator.m */,
+				232D454CFD6310092C2FFB32739942E1 /* DSJSONSchemaConditionalValidator.h */,
+				878D73A86E08CCC776528F71955B6B4B /* DSJSONSchemaConditionalValidator.m */,
+				2081E87CC4010E385F6184787B270168 /* DSJSONSchemaConstValidator.h */,
+				486D9EA0A54D395A27F1A46B909E2112 /* DSJSONSchemaConstValidator.m */,
+				14521C4901952DC772B75378089C16F0 /* DSJSONSchemaContainsValidator.h */,
+				85F895127014AAE6D922DE81742E98E0 /* DSJSONSchemaContainsValidator.m */,
+				71C6BC6DA7D4B8DDBE71593F5EE0BCD1 /* DSJSONSchemaContentValidator.h */,
+				36D4AAA589387947B47FD1A202012A74 /* DSJSONSchemaContentValidator.m */,
+				CBC72B3B3917D3E0E4EFC6B84CDBA7B1 /* DSJSONSchemaDefinitions.h */,
+				BA60F134F6F6483693DDE1B6BABDC8E3 /* DSJSONSchemaDefinitions.m */,
+				8597DF0C20C9FBEEDBE1BF0DC1A95725 /* DSJSONSchemaDependenciesValidator.h */,
+				88ABFBCA585211A7AB5E3E6C9D0DFF2F /* DSJSONSchemaDependenciesValidator.m */,
+				6DBC86DC35993F836D5319B996817772 /* DSJSONSchemaEnumValidator.h */,
+				2929C534DA122FA34761E511738EE180 /* DSJSONSchemaEnumValidator.m */,
+				FDC230E84E016C53B5EE469909B17FE5 /* DSJSONSchemaErrors.h */,
+				BD216392FBE0824AC97C32107F939E69 /* DSJSONSchemaErrors.m */,
+				7F72799345180301843F79FDF4A7BD61 /* DSJSONSchemaFactory.h */,
+				0BFED0EB5E8BC314CA2578E618D2DE83 /* DSJSONSchemaFactory.m */,
+				C11208A27A2A4FF3F6999CE50F3F05AB /* DSJSONSchemaFormatValidator.h */,
+				8ED019DE8731B20F4D2D335CF697E975 /* DSJSONSchemaFormatValidator.m */,
+				2B1270FD3F1644363B5767D8660842C6 /* DSJSONSchemaNumericValidator.h */,
+				5167E87B0ECA0A96C7CBABF2CEACA8E9 /* DSJSONSchemaNumericValidator.m */,
+				DEA23BE82CF092A934AD7042AB9D646F /* DSJSONSchemaObjectPropertiesValidator.h */,
+				8724AFC58D3E8BA86B1747EE8E133C52 /* DSJSONSchemaObjectPropertiesValidator.m */,
+				09E2025387F215D55536637B67BD4F4D /* DSJSONSchemaObjectValidator.h */,
+				B7464BD15ABC075A5543026A30EFB998 /* DSJSONSchemaObjectValidator.m */,
+				A1D53CF6FA9E01BCB623CD9DCD2CE488 /* DSJSONSchemaPropertyNamesValidator.h */,
+				5650F26771DCA8FFBAB10827956401C6 /* DSJSONSchemaPropertyNamesValidator.m */,
+				E9FD936B48C65810C828DFE84192A7A1 /* DSJSONSchemaReference.h */,
+				3A0627FADB95FEA832C2B474BB27855B /* DSJSONSchemaReference.m */,
+				0D77505860617F0B82C344376CE09DF9 /* DSJSONSchemaSpecification.h */,
+				A66407F208BDBCCC391DFDA655895DC2 /* DSJSONSchemaSpecification.m */,
+				FB9781D7EB21B109CF1B641A300DB153 /* DSJSONSchemaStorage.h */,
+				7F28A77845B09136959A0EB964D14F46 /* DSJSONSchemaStorage.m */,
+				694C7433A6A4A2E32948A7EFBDAFA407 /* DSJSONSchemaStringValidator.h */,
+				B9E23269742770CFEB2C6CD2FF1CA8F3 /* DSJSONSchemaStringValidator.m */,
+				3CCA123CAE537DFDBE90C5B9781B048B /* DSJSONSchemaTypeValidator.h */,
+				F40CE05769823523E4188AB523408104 /* DSJSONSchemaTypeValidator.m */,
+				4E73C99D22132FD2EB7B0BEB931B04E4 /* DSJSONSchemaValidationContext.h */,
+				051F1C90E3952E1DFF0B50F68125419A /* DSJSONSchemaValidationContext.m */,
+				A4AD573FC098D83FF90A708222426A65 /* DSJSONSchemaValidationOptions.h */,
+				4552623C798FD67BB431A5550971C750 /* DSJSONSchemaValidationOptions.m */,
+				8BA50206FB9EAAAA682F256E60427765 /* DSJSONSchemaValidator.h */,
+				F94BD00658783896494EA98ABF8EA5FE /* NSArray+DSJSONComparison.h */,
+				70F7EB824F781090BDD0D05F9C5A8A04 /* NSArray+DSJSONComparison.m */,
+				45DC1E44EED7A921A0B2A4967630C8AB /* NSDictionary+DSJSONComparison.h */,
+				E76F00FD1E236F78404AF21D5E14141B /* NSDictionary+DSJSONComparison.m */,
+				1D677FE088DF906795C0D55DC6503B1C /* NSDictionary+DSJSONDeepMutableCopy.h */,
+				69851DD111510F8FE6FEE29E2321332F /* NSDictionary+DSJSONDeepMutableCopy.m */,
+				FCBF1F12BC047598D7F5605C1EDF3CA6 /* NSNumber+DSJSONNumberTypes.h */,
+				3C78ADBDA1B7257BE29FC862AA636B5C /* NSNumber+DSJSONNumberTypes.m */,
+				C5B4A553667D7E6B91A25DCA4DC066A8 /* NSObject+DSJSONComparison.h */,
+				66DA9DFB363E6DE73E23F755501BED57 /* NSObject+DSJSONComparison.m */,
+				038B2197C9DE521AB1B10D5F4B1AF62E /* NSString+DSJSONPointer.h */,
+				DDD0525D4AA96C546C830E187BA32AE2 /* NSString+DSJSONPointer.m */,
+				526A023FE2A2263837BFD1534727C112 /* NSURL+DSJSONReferencing.h */,
+				49639E8756C74CCEEFB535D0A2868E08 /* NSURL+DSJSONReferencing.m */,
+				397A818678B1509F15D53C2BE4B0B657 /* Support Files */,
+			);
+			name = DSJSONSchemaValidation;
+			path = DSJSONSchemaValidation;
+			sourceTree = "<group>";
+		};
+		86FE615E4CEEF7931601A1B491123ADD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8A3A128FC6503768305D6CCD6E425F23 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8BEC1ADDD26D62594F1BD87018E76F33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC63DAE6906394E6D36389A186A8018B /* APP.framework */,
+				6AF9F6A68195C7921ECF4C13EBE450E7 /* DSJSONSchemaValidation.framework */,
+				974694F981EB7E0DAE512BBB63C38ACF /* ios-app.bundle */,
+				7E048DEC2552FEBB4D25E1959C7879BE /* Pods_ios_app_Example.framework */,
+				8D80C87473DBF1AA7D321D9584B1A9FA /* Pods_ios_app_Tests.framework */,
+				F01166103033A3CBF2049A6C00F6B94C /* tinycbor.framework */,
+				F7DBC7DEEB49861B2B106AAA4F45C923 /* TinyCborObjc.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90550479F59DA00613B448787987D0F6 /* tinycbor */ = {
+			isa = PBXGroup;
+			children = (
+				6F69CF0581FA4E43A0848FB8F4B8759E /* cbor.h */,
+				D8EC4239160693DAC6D1F26BB092354B /* cborencoder.c */,
+				6FE9308A50400B141AFE9B3088307CA5 /* cborencoder_close_container_checked.c */,
+				C17D9BB5AE36FA6FFCEB9FC8AD8697C6 /* cborerrorstrings.c */,
+				9B4511569874FED2D17E56D4B2EF0200 /* cborinternal_p.h */,
+				1263C161F8FBD7EC170D69E32C9D5925 /* cborjson.h */,
+				92B2FFDFF4A30CE86B1E1ECD9AF0F228 /* cborparser.c */,
+				1510D3B6887DD2471C3F90E7721731B4 /* cborparser_dup_string.c */,
+				B91DF460D4C1F3B045A4CE2C71FB8C17 /* cborpretty.c */,
+				61537976A64306E54C7561D1354A7B09 /* cborpretty_stdio.c */,
+				5E493B3D29A7FB56396946F1C81000A7 /* cbortojson.c */,
+				E852C1B79E7E8B0B99325A9F0BAF00D8 /* cborvalidation.c */,
+				9EE0A709FB2FBFFF2105093A01C1DEB0 /* compilersupport_p.h */,
+				2C73F6D32F0BFBC3E71541305E46A56B /* open_memstream.c */,
+				84A043812FDFD96FEE3B67BD22C5BD7E /* tinycbor-version.h */,
+				5D98FED9382022826E35B97EEAD364F0 /* utf8_p.h */,
+				C697EDCE9B73812C2BA4F176227BC472 /* Support Files */,
+			);
+			name = tinycbor;
+			path = tinycbor;
+			sourceTree = "<group>";
+		};
+		9F4C96D0DF20CE4044BC6F2DB57C227D /* ios-app */ = {
+			isa = PBXGroup;
+			children = (
+				F34D32BE7664DFB8A8A8024C1DB245BD /* DSSchemaCompile.h */,
+				900A5DF2C015C5E48FC7FBE7A67200E0 /* DSSchemaCompile.m */,
+				04AF9EF60C3C317731D14C1FE4EF7992 /* DSSchemaDefinition.h */,
+				55CB5DF243E9F4FC545CE56136D44090 /* DSSchemaDefinition.m */,
+				0E51F7964A5AF4AABFB361FB78B5F0F0 /* DSSchemaFees.h */,
+				702D9F8DE14210FA572FEC28D569AD1C /* DSSchemaFees.m */,
+				A2B8D42841655F2D3D3688EF3C629029 /* DSSchemaHash.h */,
+				3149B83873D0339492CBA006744648CA /* DSSchemaHash.m */,
+				4C4152CCAD34425A8B5572C15EB5CF9F /* DSSchemaObject.h */,
+				9ECFFBD55588E17C5C094EC9B90B9FAF /* DSSchemaObject.m */,
+				B4EDCA229E511B8986DF12B950E57185 /* DSSchemaStorage.h */,
+				AE716FD59602EA53E0EAA66C8E0AEABE /* DSSchemaStorage.m */,
+				68DA05D1DA062E39D06746181A687B9C /* DSSchemaValidationResult.h */,
+				C597CDFB7B76ECAC449922D99E11D90D /* DSSchemaValidationResult.m */,
+				709D14814DCFBFDD38CC348ECEA79627 /* DSSchemaValidator.h */,
+				F5AB84AA33D3B04778D20ACDEE992DEF /* DSSchemaValidator.m */,
+				6075A10B921812134CC2D443A8E13BA3 /* Persistence */,
+				133336594074E4BEAD14AF83B071842B /* Pod */,
+				5A8184A073B0E4C07CDB3557DDC8F4CA /* Resources */,
+				A856F0E59030B92229251B59BFCBCFED /* Support Files */,
+				2AC7124A829078D9E7F13F1AA23B24FC /* Utils */,
+			);
+			name = "ios-app";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A856F0E59030B92229251B59BFCBCFED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1F9EE94AEE6A3FD69BD8B4007C83937 /* Info.plist */,
+				E7337BD9AC093BD3A45AD856902BD9AC /* ios-app.modulemap */,
+				98C43FF5859842A02B3692288A515A8B /* ios-app.xcconfig */,
+				310A0C98D708775BE8BA6126D56D9D22 /* ios-app-dummy.m */,
+				A22D86FCC7253051D313864BD228FDD3 /* ios-app-prefix.pch */,
+				45E424C9E5F2314D41D6505FB7AA0C74 /* ios-app-umbrella.h */,
+				1FDB9938B70954BC0C6FD57D9E7E1CED /* ResourceBundle-ios-app-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ios-app";
+			sourceTree = "<group>";
+		};
+		BA5EEFE8CA29DFEE946EE75C6F55CA65 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				63216D1CCEE895BAE4D2AD941387AC8C /* Info.plist */,
+				D21E3759C7601945F947E40D1B3CCAA5 /* TinyCborObjc.modulemap */,
+				4E62B26D9A482FD5B5719850E0723990 /* TinyCborObjc.xcconfig */,
+				D687B9CC2393D64DF1774D4A03D514DA /* TinyCborObjc-dummy.m */,
+				9269EF5D617EF98D13120E6E179DDBE1 /* TinyCborObjc-prefix.pch */,
+				1C54B30DDE566E6C54013E08BA97FD1C /* TinyCborObjc-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TinyCborObjc";
+			sourceTree = "<group>";
+		};
+		C697EDCE9B73812C2BA4F176227BC472 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E1915FFAFFD5009A775613E903C737C /* Info.plist */,
+				4AE84D314C3E027C501BA37205A074F4 /* tinycbor.modulemap */,
+				A26ACBE1AC7445D64D26EDE6FBA6D744 /* tinycbor.xcconfig */,
+				57E88B1B448F771AC866567FD1B392E4 /* tinycbor-dummy.m */,
+				129D2EA3E440E863AF4FC2A13DBFBE35 /* tinycbor-prefix.pch */,
+				C1A84C12D2A01971890E8918AE557B49 /* tinycbor-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/tinycbor";
+			sourceTree = "<group>";
+		};
+		CB13E9FFF42F9BB670FAC826700393C1 /* TinyCborObjc */ = {
+			isa = PBXGroup;
+			children = (
+				25C1F175EEEBC81EB8D669814D581D68 /* NSObject+DSCborEncoding.h */,
+				D6885DC37D9D9744A468852E4C9567B2 /* NSObject+DSCborEncoding.m */,
+				BA5EEFE8CA29DFEE946EE75C6F55CA65 /* Support Files */,
+			);
+			name = TinyCborObjc;
+			path = TinyCborObjc;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				869424BEE35D3ED5C44B02A63099BC3E /* Development Pods */,
+				14B60B4E7364F7B066D7FE36D5D95BFC /* Frameworks */,
+				84F5C357501044CB7085EC40F8956ADF /* Pods */,
+				8BEC1ADDD26D62594F1BD87018E76F33 /* Products */,
+				E66AD37A202BF0BC72F9C8BE743E24C3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E66AD37A202BF0BC72F9C8BE743E24C3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DFBE3F8439892FD26A4AA6DE62FF0B9 /* Pods-ios-app_Example */,
+				375803CF9CA820C2805346AE1E29241B /* Pods-ios-app_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FF4EA093664D42E865F4342414E281F3 /* JSONSchemaExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB577F7B41F9E6C1F09BBA94FF3CB835 /* DSJSONSchema+AxeSchema.h */,
+				5E826861F7C74F8CDD8404F99F39C344 /* DSJSONSchema+AxeSchema.m */,
+				8D950D900DEB2ECA70C7475C7C51E959 /* DSJSONSchemaPVerValidator.h */,
+				DDC6265425B493C478543241F66AA01A /* DSJSONSchemaPVerValidator.m */,
+			);
+			name = JSONSchemaExtensions;
+			path = JSONSchemaExtensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		27180AB58EFB6F09ADDFE2F58FC88A6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B2C2E619BABEDD57006BD4C613D8F58 /* NSObject+DSCborEncoding.h in Headers */,
+				495FE0C0F5779099F83C7A02DF3DF225 /* TinyCborObjc-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CBDC3BA52298371DF4F46E4D306F2C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BAAB78E4CF84145C52EC778DD38D899 /* DSJSONSchema+AxeSchema.h in Headers */,
+				DAEB6DDB193C545611721B1EA4209486 /* DSJSONSchemaPVerValidator.h in Headers */,
+				EB5372E45397A536CB352BDDE0A9B338 /* DSSchemaCompile.h in Headers */,
+				11BC8354322099540DCD0B812530BF26 /* DSSchemaDefinition.h in Headers */,
+				A1D4D5B2C6697D48C3C4265BD4177729 /* DSSchemaFees.h in Headers */,
+				259D9C9550AB764D3EAABDF84738D77D /* DSSchemaHash.h in Headers */,
+				DA2D7C24B16FC0099429317775EBE0BB /* DSSchemaHashUtils.h in Headers */,
+				B831AA927586BD8792475C84FF84D837 /* DSSchemaJSONSchemaUtils.h in Headers */,
+				0E15F050615DD0A816ED5FAB568296D4 /* DSSchemaModelBuilder.h in Headers */,
+				F1B06714823DF59EC0E43614958F119B /* DSSchemaObject.h in Headers */,
+				F8CE3096FB54676095601E4589437C7F /* DSSchemaPersistenceStack.h in Headers */,
+				E609FD1E497968C5EF7E80C8B668EFCC /* DSSchemaStorage.h in Headers */,
+				07843B46F736438C17CF1858D8CF5CAA /* DSSchemaValidationResult.h in Headers */,
+				6B8176B3187BD774A685661960CEBB6A /* DSSchemaValidator.h in Headers */,
+				C2A532C75A340ACD1752E24B196383F3 /* ios-app-umbrella.h in Headers */,
+				F52EFC4321307E363A1AE2C7E0844E36 /* NSAttributeDescription+DSSchema.h in Headers */,
+				78020A1CF648BA2D2DBBA2F7CC749D55 /* NSBundle+DSSchema.h in Headers */,
+				A2563CF9EC2FDD69DE58D5DCB1F3630E /* NSData+DSSchemaUtils.h in Headers */,
+				BD1B5A328FE430DCF35A4788ED31DEF1 /* NSEntityDescription+DSSchema.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CBBFE1A1FFD07C5136F4E27D7D3025 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45F35ACC0E732165F525306F24D049F0 /* cbor.h in Headers */,
+				C9C26A8E003713A935CB08E452C850BD /* cborinternal_p.h in Headers */,
+				2E2B27ACC7687A14CFB897448EF79271 /* cborjson.h in Headers */,
+				2C9730E60F61210FCB3113D846B2299B /* compilersupport_p.h in Headers */,
+				D3E6C1AA62CA63A708E856A37B370255 /* tinycbor-umbrella.h in Headers */,
+				0F2A5710B78CC0673F8400C8D3B917F7 /* tinycbor-version.h in Headers */,
+				D33BB244C410647C61338E5A155E2032 /* utf8_p.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B12CC6243132615609F0D6594532765 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B80A043EBBF208990451949609DF0258 /* DSJSONBooleanSchema.h in Headers */,
+				EECC59FB15BC5D10DC8FF2479AF28978 /* DSJSONDictionarySchema.h in Headers */,
+				164BC4F6484BFE069D4DCE839CC4F3C3 /* DSJSONSchema+Protected.h in Headers */,
+				691E70174F45B21E43FE0BA967660C20 /* DSJSONSchema+StandardValidators.h in Headers */,
+				49327967D014251A95FB3B39800BFB3D /* DSJSONSchema.h in Headers */,
+				AEC3271D363F16E16DCF06495E122F69 /* DSJSONSchemaArrayItemsValidator.h in Headers */,
+				60EA0012A923112603155AFE0A72E1FF /* DSJSONSchemaArrayValidator.h in Headers */,
+				5134E80FCDBF3FF27A2C298300CFBB3B /* DSJSONSchemaCombiningValidator.h in Headers */,
+				8C0DB24BAF74ACDE0CA1F1164E20C392 /* DSJSONSchemaConditionalValidator.h in Headers */,
+				09810790938103BF9F0960ABA69CBC3A /* DSJSONSchemaConstValidator.h in Headers */,
+				640D854C0AFE108FB32F6B42CBC8D1AE /* DSJSONSchemaContainsValidator.h in Headers */,
+				7F4E7CA9F56897D22E42759DA0B5D75B /* DSJSONSchemaContentValidator.h in Headers */,
+				F250DD3CADE80C5824702F445088EC76 /* DSJSONSchemaDefinitions.h in Headers */,
+				32280BBF268B9558F5BEE3E1DACB588D /* DSJSONSchemaDependenciesValidator.h in Headers */,
+				673129D13C0153A388ED93316F39AE61 /* DSJSONSchemaEnumValidator.h in Headers */,
+				7C060A07B7F0937A5710EC1B4EE39150 /* DSJSONSchemaErrors.h in Headers */,
+				297424E8717E48CAB6B3FEBBDA25C25F /* DSJSONSchemaFactory.h in Headers */,
+				A6DB09610CFFD19EE42732411D3903A6 /* DSJSONSchemaFormatValidator.h in Headers */,
+				30E7A6214B878FDB11E3BFBE4E61F9FF /* DSJSONSchemaNumericValidator.h in Headers */,
+				AA00C1402EC716BA2A1277B4160BF0C8 /* DSJSONSchemaObjectPropertiesValidator.h in Headers */,
+				5434DEA2441413783D3C8277C3F6CA10 /* DSJSONSchemaObjectValidator.h in Headers */,
+				3CC4AF64351F6410F4F0C3B8BA6C2F21 /* DSJSONSchemaPropertyNamesValidator.h in Headers */,
+				94F401A62E4DCFA5FBF9DB091BA93622 /* DSJSONSchemaReference.h in Headers */,
+				9D93CDF2D616B973B1D79FFC71CEE193 /* DSJSONSchemaSpecification.h in Headers */,
+				1717FAED88B51C7ABCF52CB11BE08FEF /* DSJSONSchemaStorage.h in Headers */,
+				84E136F32075A2F6681ADE6B6F187B4D /* DSJSONSchemaStringValidator.h in Headers */,
+				DEE1B9BE63154B6F253930DE6619C9AF /* DSJSONSchemaTypeValidator.h in Headers */,
+				C6A700DA4DE49D988445CC60AFDA9499 /* DSJSONSchemaValidation-umbrella.h in Headers */,
+				0C65F25295BADA6758016FE2DDF126DF /* DSJSONSchemaValidationContext.h in Headers */,
+				5041A4454CC1CABA2F0FFC072F4A412F /* DSJSONSchemaValidationOptions.h in Headers */,
+				94C79B18908A944CBB3438B4C3ADA702 /* DSJSONSchemaValidator.h in Headers */,
+				C4FD3BBB4AC81427E1E2C6060A0647FD /* NSArray+DSJSONComparison.h in Headers */,
+				6CBDAE4FEDEDE77B345394F901323CC6 /* NSDictionary+DSJSONComparison.h in Headers */,
+				C9EF26731C659A13D8F91D1E79F11956 /* NSDictionary+DSJSONDeepMutableCopy.h in Headers */,
+				8D3BD260828697D7D4FC47D30B99098A /* NSNumber+DSJSONNumberTypes.h in Headers */,
+				AC7144BFCACAEE948F2014909D9F2C5D /* NSObject+DSJSONComparison.h in Headers */,
+				5E526DD02FDE63F843F482844CC50C44 /* NSString+DSJSONPointer.h in Headers */,
+				3123AD2DC9F2E5357776AC857EE1278D /* NSURL+DSJSONReferencing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8312D7299297C5A8B2A4A6FEAF0C41E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E98FA248441D40EB338C72D7FC0EB6E /* Pods-ios-app_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D332911BDA09F9EF53550F945F820FE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD706F44EF28C069122BDA1265B10607 /* Pods-ios-app_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3674AF814573F446F46A99CF67795384 /* Pods-ios-app_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F58B5A1EB8C9F7AA936BBBD782E9600 /* Build configuration list for PBXNativeTarget "Pods-ios-app_Example" */;
+			buildPhases = (
+				C8312D7299297C5A8B2A4A6FEAF0C41E /* Headers */,
+				1F26F920F6B152137E213EAFC3D8E7AE /* Sources */,
+				0D969A4CA0E11819E03D183C02F3C64C /* Frameworks */,
+				6126ECD65D5E477AACED35AA630E48F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFFA39F48C44309E7C9A75A7A10CC856 /* PBXTargetDependency */,
+				D40D9CA71A67172577AA7F178195984D /* PBXTargetDependency */,
+				C6F0D9B95851B63B57A07BA37D2DA93B /* PBXTargetDependency */,
+				9ED5C213886846CE526F5538B195FF99 /* PBXTargetDependency */,
+			);
+			name = "Pods-ios-app_Example";
+			productName = "Pods-ios-app_Example";
+			productReference = 7E048DEC2552FEBB4D25E1959C7879BE /* Pods_ios_app_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6044DD5812410029B1EAAE8B4D9D786B /* TinyCborObjc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADBEE3A0C4CF6804E4D738A39B00FAED /* Build configuration list for PBXNativeTarget "TinyCborObjc" */;
+			buildPhases = (
+				27180AB58EFB6F09ADDFE2F58FC88A6F /* Headers */,
+				008B025FAD7A813BA94A38E01E040549 /* Sources */,
+				D2C866960CAE7CD9CA2A3901D5DF3BAE /* Frameworks */,
+				9C246BC41C84526A64FE141D72461C7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E3526E7E5E03375275A02E8F5822B7E /* PBXTargetDependency */,
+			);
+			name = TinyCborObjc;
+			productName = TinyCborObjc;
+			productReference = F7DBC7DEEB49861B2B106AAA4F45C923 /* TinyCborObjc.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		66C79AC26893DFC8CF0853BF953A5155 /* ios-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 955AB5A1CA9B615E3C4B5AE9D2AC8BE1 /* Build configuration list for PBXNativeTarget "ios-app" */;
+			buildPhases = (
+				2CBDC3BA52298371DF4F46E4D306F2C3 /* Headers */,
+				33638DBA76A664D677671A849A7CAA99 /* Sources */,
+				7990C1C4A11689D6E8497B6E23460AB2 /* Frameworks */,
+				A2774D76273EEBBADD17367F6DC58DC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01991CBFFD96DED733EEEB7DA8408C16 /* PBXTargetDependency */,
+				A3D7156A9F603F9D058C30AF7D7F8691 /* PBXTargetDependency */,
+				197FB1E6420EBD4F14D1F12CD0263D01 /* PBXTargetDependency */,
+				F7B982FCC949F0CBBA127227F24C074C /* PBXTargetDependency */,
+			);
+			name = "ios-app";
+			productName = "ios-app";
+			productReference = AC63DAE6906394E6D36389A186A8018B /* APP.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6F08CA4EB4D6D3DABCF4EEEDA1943957 /* ios-app-ios-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A0C597067A11411F4782C57C826A1A /* Build configuration list for PBXNativeTarget "ios-app-ios-app" */;
+			buildPhases = (
+				7F9628612A36854FC21ACE8D78F556CB /* Sources */,
+				4911111B71E9BE333B5EF51AEB26CD7C /* Frameworks */,
+				7F33DBA4A8D466FD8990AD81255B7FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-app-ios-app";
+			productName = "ios-app-ios-app";
+			productReference = 974694F981EB7E0DAE512BBB63C38ACF /* ios-app.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		CDCFEA90D7C8EC6281EB303EBFF253D6 /* Pods-ios-app_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0006B361D7B4E29FF9FCF42B51E14FBC /* Build configuration list for PBXNativeTarget "Pods-ios-app_Tests" */;
+			buildPhases = (
+				D332911BDA09F9EF53550F945F820FE6 /* Headers */,
+				AC092EDAB74BFC0E616A0C33B515A198 /* Sources */,
+				C2916F3D67E7EFAFC933656813DE34D6 /* Frameworks */,
+				1879A61580A4889F611F920562D8F006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE172A70661409F46E5F0DDB0E92EC45 /* PBXTargetDependency */,
+			);
+			name = "Pods-ios-app_Tests";
+			productName = "Pods-ios-app_Tests";
+			productReference = 8D80C87473DBF1AA7D321D9584B1A9FA /* Pods_ios_app_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DE8EB9B28DC0B30B6E7A51142D32EE14 /* DSJSONSchemaValidation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47242C7BCB5AFCEE6628CB8F06CBDDBE /* Build configuration list for PBXNativeTarget "DSJSONSchemaValidation" */;
+			buildPhases = (
+				6B12CC6243132615609F0D6594532765 /* Headers */,
+				721757741B03DE2FE587CB98457332E6 /* Sources */,
+				1DF041ADCEBC9D066934C9B5452C25BB /* Frameworks */,
+				51637A0A530DDDA7C4A97E8146AB0E83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSJSONSchemaValidation;
+			productName = DSJSONSchemaValidation;
+			productReference = 6AF9F6A68195C7921ECF4C13EBE450E7 /* DSJSONSchemaValidation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F0AB05CE9A8D73BFCEB9D164B31550E8 /* tinycbor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F90BD7EE9565E0DE9D1B82F3B7AB0D12 /* Build configuration list for PBXNativeTarget "tinycbor" */;
+			buildPhases = (
+				49CBBFE1A1FFD07C5136F4E27D7D3025 /* Headers */,
+				F00AE1A18F33535668F949118AAB3B7D /* Sources */,
+				7D08864E9BB04929F03EC883557E8C01 /* Frameworks */,
+				6E0D28EDFB80BEA47C2C8CB9EACD7015 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tinycbor;
+			productName = tinycbor;
+			productReference = F01166103033A3CBF2049A6C00F6B94C /* tinycbor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8BEC1ADDD26D62594F1BD87018E76F33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE8EB9B28DC0B30B6E7A51142D32EE14 /* DSJSONSchemaValidation */,
+				66C79AC26893DFC8CF0853BF953A5155 /* ios-app */,
+				6F08CA4EB4D6D3DABCF4EEEDA1943957 /* ios-app-ios-app */,
+				3674AF814573F446F46A99CF67795384 /* Pods-ios-app_Example */,
+				CDCFEA90D7C8EC6281EB303EBFF253D6 /* Pods-ios-app_Tests */,
+				F0AB05CE9A8D73BFCEB9D164B31550E8 /* tinycbor */,
+				6044DD5812410029B1EAAE8B4D9D786B /* TinyCborObjc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1879A61580A4889F611F920562D8F006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51637A0A530DDDA7C4A97E8146AB0E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6126ECD65D5E477AACED35AA630E48F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0D28EDFB80BEA47C2C8CB9EACD7015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F33DBA4A8D466FD8990AD81255B7FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E73091C6A7CEFCB325BD17E327F377B /* axe_system_schema.json in Resources */,
+				02D4E91C30E175ECB2380C9052E0A8DC /* schema_v7.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C246BC41C84526A64FE141D72461C7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2774D76273EEBBADD17367F6DC58DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF851ED10991396CE50A5947FF14BF4 /* ios-app.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		008B025FAD7A813BA94A38E01E040549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A45602ECA931A79425A3C4D8BD9F10 /* NSObject+DSCborEncoding.m in Sources */,
+				559FCBBAC64128C855D6DE97856CE0B4 /* TinyCborObjc-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F26F920F6B152137E213EAFC3D8E7AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EF642932EC68B578104CB16825C5C3 /* Pods-ios-app_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33638DBA76A664D677671A849A7CAA99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD1E312E0C67A8345DAF91EC5924223 /* DSJSONSchema+AxeSchema.m in Sources */,
+				DDC784F434C2A2CAA4A848AC6301E49B /* DSJSONSchemaPVerValidator.m in Sources */,
+				F81C0897AC78D2827FA171604CCD88AD /* DSSchemaCompile.m in Sources */,
+				102FB4DFA0C396AF67743D7B9F3BEA7E /* DSSchemaDefinition.m in Sources */,
+				B7CAD68048F527515DCB90814A697EEE /* DSSchemaFees.m in Sources */,
+				091FE12DF7C7777491853A6C34326347 /* DSSchemaHash.m in Sources */,
+				A0F241C86D9A001EB39FBAB8BED62F21 /* DSSchemaHashUtils.m in Sources */,
+				4DBAE430B8E7F77D3FA3E82B92F80B13 /* DSSchemaJSONSchemaUtils.m in Sources */,
+				D64F62EDAFD21B0FCFF072981F844893 /* DSSchemaModelBuilder.m in Sources */,
+				187ABE3DA31932F323AC1D493A05726C /* DSSchemaObject.m in Sources */,
+				0CF2E5570062FC9CD331926AB490B12B /* DSSchemaPersistenceStack.m in Sources */,
+				6453F63B7E9B8FFC95BF72C557524B24 /* DSSchemaStorage.m in Sources */,
+				D69802F61F44B507B738DD229ADA3B87 /* DSSchemaValidationResult.m in Sources */,
+				5623BCE751155D5D2E0A166E348D316E /* DSSchemaValidator.m in Sources */,
+				28967461D2E739E801BFDAED23AAB490 /* ios-app-dummy.m in Sources */,
+				5DFF7FC828A7E95A9CC4154118574923 /* NSAttributeDescription+DSSchema.m in Sources */,
+				CA9F61908FA7B4A0427DDC4561BFE18D /* NSBundle+DSSchema.m in Sources */,
+				3376E80DFD020391E609E7BFB26B9D63 /* NSData+DSSchemaUtils.m in Sources */,
+				ADBDA20A1D7AF93EE5D1243E39B9188B /* NSEntityDescription+DSSchema.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721757741B03DE2FE587CB98457332E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0CC6984E23F5F244D6C1A0C48F214D /* DSJSONBooleanSchema.m in Sources */,
+				47322B08D4E35A60E8341F4FC1B6FCF8 /* DSJSONDictionarySchema.m in Sources */,
+				54817C1D073EDFF77772501242AAFF65 /* DSJSONSchema+StandardValidators.m in Sources */,
+				14DB444382146D8A31E220837DC0D997 /* DSJSONSchema.m in Sources */,
+				AD9C51FA9F300C21B6579056C34DFA4D /* DSJSONSchemaArrayItemsValidator.m in Sources */,
+				B690F2902EE97C7BFDA1ADF6D89BB50E /* DSJSONSchemaArrayValidator.m in Sources */,
+				5B4ADEFCBBCEC7EE7B5EA53240755EC0 /* DSJSONSchemaCombiningValidator.m in Sources */,
+				3A616AA59D449D136AB50A4325735BC8 /* DSJSONSchemaConditionalValidator.m in Sources */,
+				388984DF6D007380C09B39DFDD54FB7B /* DSJSONSchemaConstValidator.m in Sources */,
+				9C17141ACEB4B083FF2B79EC3755DD9C /* DSJSONSchemaContainsValidator.m in Sources */,
+				174095403DDC224A5F89210ADE3C78A0 /* DSJSONSchemaContentValidator.m in Sources */,
+				9B5FF1F63DC73F80421983CA94EBEDF4 /* DSJSONSchemaDefinitions.m in Sources */,
+				64BA9B59E582E4B689BC36933CEB8288 /* DSJSONSchemaDependenciesValidator.m in Sources */,
+				EFAE9ECD216155B6155A3BFC1A8389A9 /* DSJSONSchemaEnumValidator.m in Sources */,
+				232FBF5818812E8359D7BAB3A52F44B7 /* DSJSONSchemaErrors.m in Sources */,
+				1B65DAC6CACF3D29ED2F00E00A29AD90 /* DSJSONSchemaFactory.m in Sources */,
+				A0DDD1FB97E59DAC8556214F5E242BD7 /* DSJSONSchemaFormatValidator.m in Sources */,
+				B1E5E7C39A617E43FF321CCEBDC0D04B /* DSJSONSchemaNumericValidator.m in Sources */,
+				50B7041CE9F1699C907FA1640CC8EA3F /* DSJSONSchemaObjectPropertiesValidator.m in Sources */,
+				3BBCA4C82F3EE01D9E9E05A327354EDD /* DSJSONSchemaObjectValidator.m in Sources */,
+				3C769D408B16D520FE4216059EBF40F7 /* DSJSONSchemaPropertyNamesValidator.m in Sources */,
+				D00ABA78489618C18EBFBD62F57A9B51 /* DSJSONSchemaReference.m in Sources */,
+				9B1D7E7BAB75324DFA9256511C62DF81 /* DSJSONSchemaSpecification.m in Sources */,
+				1EE04070D25951CBFABDBE1F68FA46AE /* DSJSONSchemaStorage.m in Sources */,
+				B1731A8AB5A87A57E6CCD19C349D003F /* DSJSONSchemaStringValidator.m in Sources */,
+				80397918DB465F9F86C014F16336EE4A /* DSJSONSchemaTypeValidator.m in Sources */,
+				4DB14C9D7F675AD4FEBE3DDA4C3D2DE9 /* DSJSONSchemaValidation-dummy.m in Sources */,
+				5F2FEDEE8C411A29FFF77FDF41C4F867 /* DSJSONSchemaValidationContext.m in Sources */,
+				085671851C35E86F160395486CF81DB9 /* DSJSONSchemaValidationOptions.m in Sources */,
+				34F150BFA513EEA256A3EBD4EA5F3B34 /* NSArray+DSJSONComparison.m in Sources */,
+				9C70A2D581D2C904A3DA51DCF61E7E48 /* NSDictionary+DSJSONComparison.m in Sources */,
+				7ECDBF6E3AD986D2C911F5C422C39FBB /* NSDictionary+DSJSONDeepMutableCopy.m in Sources */,
+				08B6E2B4439876A485993F2A094322B9 /* NSNumber+DSJSONNumberTypes.m in Sources */,
+				AEA8632A9483B787A94A14B9A2BED099 /* NSObject+DSJSONComparison.m in Sources */,
+				8DCD0A5D1089733333F8AE22E41CC79A /* NSString+DSJSONPointer.m in Sources */,
+				CB56963B29450CB2D2F8F5C4FAA478EA /* NSURL+DSJSONReferencing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F9628612A36854FC21ACE8D78F556CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC092EDAB74BFC0E616A0C33B515A198 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D825E455E3EA2F604AD6994433A6AB10 /* Pods-ios-app_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F00AE1A18F33535668F949118AAB3B7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9645B3B7FC6C7285179753C0F87FA1EC /* cborencoder.c in Sources */,
+				0658161795AD904E0F72D479393460E0 /* cborencoder_close_container_checked.c in Sources */,
+				F402D2CF35A98BFDE66525716E34A12C /* cborerrorstrings.c in Sources */,
+				AA11E7CDBAAB4FB6F2A2BC3EE816E734 /* cborparser.c in Sources */,
+				42288C2104172EB61D9122AE261316D0 /* cborparser_dup_string.c in Sources */,
+				921A56D3EDCB476C9492C0BC6D0B6453 /* cborpretty.c in Sources */,
+				2238C13FB2478BE9C11E87E231154012 /* cborpretty_stdio.c in Sources */,
+				13A47935139E7A055D74E95B017B3199 /* cbortojson.c in Sources */,
+				A0BFF2B68A060FDDD50FEF77692256B6 /* cborvalidation.c in Sources */,
+				EEF7C52D88E6111E084AED9BC6E503A1 /* open_memstream.c in Sources */,
+				30D3E0BEF951E346E9B4A7CC72F8559E /* tinycbor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01991CBFFD96DED733EEEB7DA8408C16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DSJSONSchemaValidation;
+			target = DE8EB9B28DC0B30B6E7A51142D32EE14 /* DSJSONSchemaValidation */;
+			targetProxy = 1C55A5BBA244ACB7555750BF5E39DA60 /* PBXContainerItemProxy */;
+		};
+		197FB1E6420EBD4F14D1F12CD0263D01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ios-app-ios-app";
+			target = 6F08CA4EB4D6D3DABCF4EEEDA1943957 /* ios-app-ios-app */;
+			targetProxy = 02A9807D3D202B3BC8578AFD3A84B3B6 /* PBXContainerItemProxy */;
+		};
+		3E3526E7E5E03375275A02E8F5822B7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tinycbor;
+			target = F0AB05CE9A8D73BFCEB9D164B31550E8 /* tinycbor */;
+			targetProxy = 1A1CDF6A3ACBFD314CEB8209FE104E52 /* PBXContainerItemProxy */;
+		};
+		9ED5C213886846CE526F5538B195FF99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tinycbor;
+			target = F0AB05CE9A8D73BFCEB9D164B31550E8 /* tinycbor */;
+			targetProxy = 5EC9A11221C88E4DEDFEE1D0096D6DCB /* PBXContainerItemProxy */;
+		};
+		A3D7156A9F603F9D058C30AF7D7F8691 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyCborObjc;
+			target = 6044DD5812410029B1EAAE8B4D9D786B /* TinyCborObjc */;
+			targetProxy = BC97B1B070B25A2548AA5A84FAF5573B /* PBXContainerItemProxy */;
+		};
+		BE172A70661409F46E5F0DDB0E92EC45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ios-app_Example";
+			target = 3674AF814573F446F46A99CF67795384 /* Pods-ios-app_Example */;
+			targetProxy = 87CC5F07AC3E3F75409A2193DB529EEB /* PBXContainerItemProxy */;
+		};
+		C6F0D9B95851B63B57A07BA37D2DA93B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ios-app";
+			target = 66C79AC26893DFC8CF0853BF953A5155 /* ios-app */;
+			targetProxy = E31C06A4BD5CDEE1B96D0B79B2D224D9 /* PBXContainerItemProxy */;
+		};
+		D40D9CA71A67172577AA7F178195984D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyCborObjc;
+			target = 6044DD5812410029B1EAAE8B4D9D786B /* TinyCborObjc */;
+			targetProxy = D02A949FBCC436307078B5DBFB738C9A /* PBXContainerItemProxy */;
+		};
+		DFFA39F48C44309E7C9A75A7A10CC856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DSJSONSchemaValidation;
+			target = DE8EB9B28DC0B30B6E7A51142D32EE14 /* DSJSONSchemaValidation */;
+			targetProxy = C402E3E454854C7FEAD455777F69A666 /* PBXContainerItemProxy */;
+		};
+		F7B982FCC949F0CBBA127227F24C074C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tinycbor;
+			target = F0AB05CE9A8D73BFCEB9D164B31550E8 /* tinycbor */;
+			targetProxy = F8F10538AEB477471CBDE159CB2062C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07B2A5582277EA17EBAE4917DC376FF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E62B26D9A482FD5B5719850E0723990 /* TinyCborObjc.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyCborObjc/TinyCborObjc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyCborObjc/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TinyCborObjc/TinyCborObjc.modulemap";
+				PRODUCT_MODULE_NAME = TinyCborObjc;
+				PRODUCT_NAME = TinyCborObjc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		17597A5D0914B0B3291B7D785A0F4FA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C43FF5859842A02B3692288A515A8B /* ios-app.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ios-app";
+				INFOPLIST_FILE = "Target Support Files/ios-app/ResourceBundle-ios-app-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = "ios-app";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3BEA1183957AC0B7BF62BE26574A80F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 811CAD6D6D3E67D8B172FA4650DC5202 /* Pods-ios-app_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ios-app_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ios-app_Example/Pods-ios-app_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F2028B45EB2647DCAC7201BDF6E2781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F75250CCD418687BCAFA1BFE13D099B8 /* Pods-ios-app_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ios-app_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ios-app_Tests/Pods-ios-app_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4705B8103D675CC4D811151D9C14C6AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C43FF5859842A02B3692288A515A8B /* ios-app.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ios-app/ios-app-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ios-app/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ios-app/ios-app.modulemap";
+				PRODUCT_MODULE_NAME = APP;
+				PRODUCT_NAME = APP;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		548234728109A370A2F445F773103564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21F5DD0AABB1303C1B40FC04ECBD77CC /* Pods-ios-app_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ios-app_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ios-app_Tests/Pods-ios-app_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C8746BD025217912918DDD8648E89F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C43FF5859842A02B3692288A515A8B /* ios-app.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ios-app/ios-app-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ios-app/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ios-app/ios-app.modulemap";
+				PRODUCT_MODULE_NAME = APP;
+				PRODUCT_NAME = APP;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9298ACC821EC7D1A6037A2D45C10256E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE23AC2549B8AD81F7539B9C978F5DF7 /* DSJSONSchemaValidation.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DSJSONSchemaValidation/DSJSONSchemaValidation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DSJSONSchemaValidation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DSJSONSchemaValidation/DSJSONSchemaValidation.modulemap";
+				PRODUCT_MODULE_NAME = DSJSONSchemaValidation;
+				PRODUCT_NAME = DSJSONSchemaValidation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		984B99C322F45D243D991CA6A63EF1F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B7FD5B0ACE9286FFDADF4ACE2322AF4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B882F244CA92F821A4891F1842914E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A26ACBE1AC7445D64D26EDE6FBA6D744 /* tinycbor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/tinycbor/tinycbor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/tinycbor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/tinycbor/tinycbor.modulemap";
+				PRODUCT_MODULE_NAME = tinycbor;
+				PRODUCT_NAME = tinycbor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C900EFDB4F603FB352AD3071834316E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE23AC2549B8AD81F7539B9C978F5DF7 /* DSJSONSchemaValidation.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DSJSONSchemaValidation/DSJSONSchemaValidation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DSJSONSchemaValidation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DSJSONSchemaValidation/DSJSONSchemaValidation.modulemap";
+				PRODUCT_MODULE_NAME = DSJSONSchemaValidation;
+				PRODUCT_NAME = DSJSONSchemaValidation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9711B7F458CC914F67A91D738066661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C43FF5859842A02B3692288A515A8B /* ios-app.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ios-app";
+				INFOPLIST_FILE = "Target Support Files/ios-app/ResourceBundle-ios-app-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = "ios-app";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D4A725136DF2260372200F248E6FB70F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A26ACBE1AC7445D64D26EDE6FBA6D744 /* tinycbor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/tinycbor/tinycbor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/tinycbor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/tinycbor/tinycbor.modulemap";
+				PRODUCT_MODULE_NAME = tinycbor;
+				PRODUCT_NAME = tinycbor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E5E3A0D8A78F4069DA694D611DE28B31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E62B26D9A482FD5B5719850E0723990 /* TinyCborObjc.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyCborObjc/TinyCborObjc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyCborObjc/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TinyCborObjc/TinyCborObjc.modulemap";
+				PRODUCT_MODULE_NAME = TinyCborObjc;
+				PRODUCT_NAME = TinyCborObjc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6240A15538B82F9503696267CA1AAD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9368BEE4EFF78551A89FD70B1B5AD64 /* Pods-ios-app_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ios-app_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ios-app_Example/Pods-ios-app_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0006B361D7B4E29FF9FCF42B51E14FBC /* Build configuration list for PBXNativeTarget "Pods-ios-app_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				548234728109A370A2F445F773103564 /* Debug */,
+				3F2028B45EB2647DCAC7201BDF6E2781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F58B5A1EB8C9F7AA936BBBD782E9600 /* Build configuration list for PBXNativeTarget "Pods-ios-app_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BEA1183957AC0B7BF62BE26574A80F7 /* Debug */,
+				F6240A15538B82F9503696267CA1AAD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47242C7BCB5AFCEE6628CB8F06CBDDBE /* Build configuration list for PBXNativeTarget "DSJSONSchemaValidation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9298ACC821EC7D1A6037A2D45C10256E /* Debug */,
+				C900EFDB4F603FB352AD3071834316E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984B99C322F45D243D991CA6A63EF1F1 /* Debug */,
+				B7FD5B0ACE9286FFDADF4ACE2322AF4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		955AB5A1CA9B615E3C4B5AE9D2AC8BE1 /* Build configuration list for PBXNativeTarget "ios-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C8746BD025217912918DDD8648E89F7 /* Debug */,
+				4705B8103D675CC4D811151D9C14C6AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A0C597067A11411F4782C57C826A1A /* Build configuration list for PBXNativeTarget "ios-app-ios-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9711B7F458CC914F67A91D738066661 /* Debug */,
+				17597A5D0914B0B3291B7D785A0F4FA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADBEE3A0C4CF6804E4D738A39B00FAED /* Build configuration list for PBXNativeTarget "TinyCborObjc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B2A5582277EA17EBAE4917DC376FF5 /* Debug */,
+				E5E3A0D8A78F4069DA694D611DE28B31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F90BD7EE9565E0DE9D1B82F3B7AB0D12 /* Build configuration list for PBXNativeTarget "tinycbor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B882F244CA92F821A4891F1842914E55 /* Debug */,
+				D4A725136DF2260372200F248E6FB70F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

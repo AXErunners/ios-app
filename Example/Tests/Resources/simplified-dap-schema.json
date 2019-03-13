@@ -1,0 +1,29 @@
+{
+  "$id": "http://axe.org/schema/dapcontract",
+  "properties": {
+    "dapobjectchild": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "http://axe.org/schemas/sys#/definitions/dapobjectbase"
+        }
+      ],
+      "properties": {
+        "dapobjectid": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "dapobjectid"
+      ]
+    }
+  },
+  "oneOf": [
+    {
+      "required": [
+        "dapobjectchild"
+      ]
+    }
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,31 @@
+PODS:
+  - DSJSONSchemaValidation (2.0.5)
+  - ios-app (0.0.1):
+    - DSJSONSchemaValidation (= 2.0.5)
+    - TinyCborObjc (= 0.2.2)
+  - tinycbor (0.5.3-alpha1)
+  - TinyCborObjc (0.2.2):
+    - tinycbor (= 0.5.3-alpha1)
+
+DEPENDENCIES:
+  - ios-app (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DSJSONSchemaValidation
+    - tinycbor
+    - TinyCborObjc
+
+EXTERNAL SOURCES:
+  ios-app:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DSJSONSchemaValidation: a0d791d3c8a4801cb3c72f3c8701342e2cb66f58
+  ios-app: f58d86d3b346b7ccb94f2c93f1ec046c3879ec87
+  tinycbor: 81999417a2c8ee8c4a7651738a11ad0711c82935
+  TinyCborObjc: f42aa647c81de86a395a5691d6a93d04294f6d03
+
+PODFILE CHECKSUM: 073dd568b0c49fcf58a7cd0d57966c5fc437b1c7
+
+COCOAPODS: 1.5.3
