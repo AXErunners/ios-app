@@ -1,6 +1,6 @@
 PODS:
   - DSJSONSchemaValidation (2.0.5)
-  - ios-app (0.0.1):
+  - ios-app (0.0.3):
     - DSJSONSchemaValidation (= 2.0.5)
     - TinyCborObjc (= 0.2.2)
   - tinycbor (0.5.3-alpha1)
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DSJSONSchemaValidation: a0d791d3c8a4801cb3c72f3c8701342e2cb66f58
-  ios-app: 3d0fea03acc4830b346206f2faa8ca52cfaa4c37
+  ios-app: 374a81d9e179173bc52e7dbe95b39ab896225f30
   tinycbor: 81999417a2c8ee8c4a7651738a11ad0711c82935
   TinyCborObjc: f42aa647c81de86a395a5691d6a93d04294f6d03
 
