@@ -24,15 +24,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 @implementation DSSchemaHashUtils
 
-+ (nullable NSString *)hashOfObject:(NSObject *)object {
++ (nullable NSData *)hashOfObject:(NSObject *)object {
     NSData *cborData = [object ds_cborEncodedObject];
     if (!cborData) {
         return nil;
     }
-
+    
     NSData *sha256Twice = [[cborData ds_SHA256Digest] ds_SHA256Digest];
     NSData *sha256Reversed = [sha256Twice ds_reverseData];
-    NSString *sha256String = [sha256Reversed ds_hexStringFromData];
+    
+    return sha256Reversed;
+}
+
++ (nullable NSString *)hashStringOfObject:(NSObject *)object {
+    NSData *hash = [self hashOfObject:object];
+    if (!hash) {
+        return nil;
+    }
+
+    NSString *sha256String = [hash ds_hexStringFromData];
 
     return sha256String;
 }

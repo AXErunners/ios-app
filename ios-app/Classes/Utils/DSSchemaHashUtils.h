@@ -21,7 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DSSchemaHashUtils : NSObject
 
-+ (nullable NSString *)hashOfObject:(NSObject *)object;
++ (nullable NSData *)hashOfObject:(NSObject *)object;
++ (nullable NSString *)hashStringOfObject:(NSObject *)object;
 
 @end
 
