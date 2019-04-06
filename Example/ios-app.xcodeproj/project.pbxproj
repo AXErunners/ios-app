@@ -314,9 +314,6 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Andrew Podkovyrin";
 				TargetAttributes = {
-					6003F589195388D20070C39A = {
-						DevelopmentTeam = 9D46X4M258;
-					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -618,7 +615,6 @@
 			baseConfigurationReference = A5D7506F3DFCCB8407E3D126 /* Pods-ios-app_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9D46X4M258;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-app/ios-app-Prefix.pch";
 				INFOPLIST_FILE = "ios-app/ios-app-Info.plist";
@@ -634,7 +630,6 @@
 			baseConfigurationReference = 81FA227B01883CAE6D3D8421 /* Pods-ios-app_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9D46X4M258;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-app/ios-app-Prefix.pch";
 				INFOPLIST_FILE = "ios-app/ios-app-Info.plist";
