@@ -35,7 +35,7 @@
       }
     }
   },
-  "dashpay_dap": {
+  "axerunners_dap": {
     "dapcontract": {
       "debug": "valid registration of a new DAP on the chain",
       "pver": 0,
@@ -168,9 +168,9 @@
       }
     }
   },
-  "alice_dashpay_user": {
+  "alice_axerunners_user": {
     "objtype": "user",
-    "debug": "valid dashpay blockchainuser for alice",
+    "debug": "valid axerunners blockchainuser for alice",
     "idx": 0,
     "rev": 1,
     "act": 1
@@ -184,7 +184,7 @@
       "dapobjects": [
         {
           "objtype": "user",
-          "debug": "valid dashpay blockchainuser for alice",
+          "debug": "valid axerunners blockchainuser for alice",
           "idx": 0,
           "rev": 1,
           "act": 1
@@ -268,9 +268,9 @@
       }
     }
   },
-  "bob_dashpay_user": {
+  "bob_axerunners_user": {
     "objtype": "user",
-    "debug": "valid dashpay blockchainuser for bob",
+    "debug": "valid axerunners blockchainuser for bob",
     "dapid": "21af565312c6556c3a1bcda2d389b11ea400ec5c06cd0aea47e3302309377371",
     "rev": 0,
     "idx": 0,
@@ -286,7 +286,7 @@
       "dapobjects": [
         {
           "objtype": "user",
-          "debug": "valid dashpay blockchainuser for bob",
+          "debug": "valid axerunners blockchainuser for bob",
           "dapid": "ac5784e7dd8fc9f1b638a353fb10015d3841bb9076c20e2ebefc3e97599e92b5",
           "rev": 0,
           "idx": 0,

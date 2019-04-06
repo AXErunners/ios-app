@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "DSDAPObjectsFactory.h"
 #import "DSSchemaCompile.h"
 #import "DSSchemaDefinition.h"
 #import "DSSchemaFees.h"
