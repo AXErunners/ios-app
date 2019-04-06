@@ -20,10 +20,6 @@ it, simply add the following line to your Podfile:
 pod 'ios-app'
 ```
 
-## Author
-
-Andrew Podkovyrin, podkovyrin@gmail.com
-
 ## License
 
 ios-app is available under the MIT license. See the LICENSE file for more info.
