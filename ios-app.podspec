@@ -24,5 +24,5 @@ The iOS implementation of the Axe Platform Protocol
   s.module_name = 'APP'
 
   s.dependency 'DSJSONSchemaValidation', '2.0.5'
-  s.dependency 'TinyCborObjc', '0.2.2'
+  s.dependency 'TinyCborObjc', '0.3.0'
 end
