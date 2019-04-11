@@ -153,13 +153,11 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/DSJSONSchemaValidation/DSJSONSchemaValidation.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TinyCborObjc/TinyCborObjc.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ios-app/APP.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/tinycbor/tinycbor.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/DSJSONSchemaValidation/DSJSONSchemaValidation.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TinyCborObjc/TinyCborObjc.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ios-app/APP.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/tinycbor/tinycbor.framework"

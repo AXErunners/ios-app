@@ -18,18 +18,16 @@
 #import "NSData+DSCborDecoding.h"
 
 #import <tinycbor/cbor.h>
-#import <tinycbor/cborjson.h>
 
-#import "fmemopen.h"
+#import "cbortojson_nsstring.h"
 
-NSString *const DSTinyCborDecodingErrorDomain = @"org.axe.tinycbor.decoding-error";
+NSString *const DSTinyCborDecodingErrorDomain = @"org.dash.tinycbor.decoding-error";
 
 NS_ASSUME_NONNULL_BEGIN
 
 @implementation NSData (DSCborDecoding)
 
-- (nullable id)ds_decodeCborWithOutBufferSize:(size_t)outBufferSize
-                                        error:(NSError *_Nullable __autoreleasing *)error {
+- (nullable id)ds_decodeCborError:(NSError *_Nullable __autoreleasing *)error {
     if (self.length == 0) {
         if (error != NULL) {
             *error = [NSError errorWithDomain:DSTinyCborDecodingErrorDomain
@@ -40,27 +38,17 @@ NS_ASSUME_NONNULL_BEGIN
         return nil;
     }
 
-    const size_t elementSize = sizeof(uint8_t);
-
     uint8_t *inBuffer = (uint8_t *)self.bytes;
-    size_t inBufferLen = sizeof(inBuffer) / elementSize;
+    size_t inBufferLen = self.length;
 
-    size_t outBufferLen = outBufferSize / elementSize;
-    uint8_t *outBuffer = calloc(outBufferLen, elementSize);
-    FILE *file;
-    if (@available(iOS 11.0, *)) {
-        file = fmemopen(outBuffer, outBufferLen, "w");
-    }
-    else {
-        file = fmemopen_compatible(outBuffer, outBufferLen, "w");
-    }
+    NSMutableString *jsonString = [NSMutableString string];
 
     CborParser parser;
     CborValue value;
-    const int flags = CborConvertDefaultFlags;
+    const int flags = 0;
     CborError err = cbor_parser_init(inBuffer, inBufferLen, 0, &parser, &value);
     if (err == CborNoError) {
-        err = cbor_value_to_json_advance(file, &value, flags);
+        err = cbor_value_to_json_advance_nsstring(jsonString, &value, flags);
     }
 
     if (err != CborNoError) {
@@ -70,25 +58,79 @@ NS_ASSUME_NONNULL_BEGIN
                                      userInfo:nil];
         }
 
-        fclose(file);
-
         return nil;
     }
-
-    // convert to NSString first to automatically process null-terminated sequence
-    NSString *jsonString = [NSString stringWithUTF8String:(char *)outBuffer];
+    
     NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
     NSError *jsonError = nil;
     id parsedData = [NSJSONSerialization JSONObjectWithData:jsonData
-                                                    options:kNilOptions
+                                                    options:NSJSONReadingMutableContainers
                                                       error:&jsonError];
+    [self convertBase64DataToNSData:parsedData];
     if (jsonError != nil && error != NULL) {
         *error = jsonError;
     }
 
-    fclose(file);
-
     return parsedData;
+}
+
+#pragma mark - Private
+
+- (void)convertBase64DataToNSData:(id)object {
+    if ([object isKindOfClass:NSMutableArray.class]) {
+        NSMutableArray *mutableArray = (NSMutableArray *)object;
+        for (NSUInteger i = 0; i < mutableArray.count; i++) {
+            id element = mutableArray[i];
+            if ([element isKindOfClass:NSArray.class] ||
+                [element isKindOfClass:NSDictionary.class]) {
+                [self convertBase64DataToNSData:element];
+            }
+            else if ([self shouldConvertObject:element]) {
+                id converted = [self dataFromBase64EncodedStringWithMarker:element];
+                [mutableArray replaceObjectAtIndex:i withObject:converted];
+            }
+        }
+    }
+    else if ([object isKindOfClass:NSMutableDictionary.class]) {
+        NSMutableDictionary *mutableDicitonary = (NSMutableDictionary *)object;
+        for (id key in mutableDicitonary) {
+            id value = mutableDicitonary[key];
+            if ([value isKindOfClass:NSArray.class] ||
+                [value isKindOfClass:NSDictionary.class]) {
+                [self convertBase64DataToNSData:value];
+            }
+            else if ([self shouldConvertObject:value]) {
+                id converted = [self dataFromBase64EncodedStringWithMarker:value];
+                mutableDicitonary[key] = converted;
+            }
+        }
+    }
+}
+
+- (id)dataFromBase64EncodedStringWithMarker:(NSString *)string {
+    NSRange markerRange = [string rangeOfString:DSCborBase64DataMarker];
+    NSAssert(markerRange.location != NSNotFound, @"String is not valid for conversion");
+    if (markerRange.location == NSNotFound) {
+        return string;
+    }
+    NSString *base64String = [string substringFromIndex:markerRange.length];
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:base64String
+                                                       options:kNilOptions];
+    if (!data) {
+        return string;
+    }
+    
+    return data;
+}
+
+- (BOOL)shouldConvertObject:(id)object {
+    if ([object isKindOfClass:NSString.class] &&
+        [object hasPrefix:DSCborBase64DataMarker]) {
+        
+        return YES;
+    }
+    
+    return NO;
 }
 
 @end

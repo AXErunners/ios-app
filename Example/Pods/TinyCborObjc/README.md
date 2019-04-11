@@ -1,11 +1,11 @@
 # TinyCborObjc
 
-[![CI Status](https://img.shields.io/travis/axerunners/TinyCborObjc.svg?style=flat)](https://travis-ci.org/axerunners/TinyCborObjc)
+[![CI Status](https://img.shields.io/travis/dashevo/TinyCborObjc.svg?style=flat)](https://travis-ci.org/dashevo/TinyCborObjc)
 [![Version](https://img.shields.io/cocoapods/v/TinyCborObjc.svg?style=flat)](https://cocoapods.org/pods/TinyCborObjc)
 [![License](https://img.shields.io/cocoapods/l/TinyCborObjc.svg?style=flat)](https://cocoapods.org/pods/TinyCborObjc)
 [![Platform](https://img.shields.io/cocoapods/p/TinyCborObjc.svg?style=flat)](https://cocoapods.org/pods/TinyCborObjc)
 
-TinyCborObjc allows encoding Foundation-objects into CBOR representation.
+TinyCborObjc allows encoding and decoding Foundation-objects into/from CBOR representation.
 
 Supported types:
 - `NSDictionary`
@@ -13,14 +13,25 @@ Supported types:
 - `NSString`
 - `NSNumber`
 - `NSNull`
+- `NSData`
 
 ## Usage
 
+Encoding
 ``` objective-c
 #import <TinyCborObjc/NSObject+DSCborEncoding.h>
 
 NSDictionary *dictionary = ...;
 NSData *cborData = [dictionary ds_cborEncodedObject];
+```
+
+Decoding
+``` objective-c
+#import <TinyCborObjc/NSData+DSCborDecoding.h>
+
+NSData *data = ...; // CBOR data
+NSError *error = nil;
+id decoded = [data ds_decodeCborError:&error];
 ```
 
 ## Dependencies

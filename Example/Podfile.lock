@@ -1,0 +1,27 @@
+PODS:
+  - ios-app (0.0.1):
+    - TinyCborObjc (= 0.4.1)
+  - tinycbor (0.5.3-alpha3)
+  - TinyCborObjc (0.4.1):
+    - tinycbor (= 0.5.3-alpha3)
+
+DEPENDENCIES:
+  - ios-app (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - tinycbor
+    - TinyCborObjc
+
+EXTERNAL SOURCES:
+  ios-app:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ios-app: 1bbf6e97e9695d1dbf78a5fd3a782ab6cae61fd4
+  tinycbor: f3596b9acc8493b19c9e0cc2d0417d9c7aa58daa
+  TinyCborObjc: e36a42aad1134bc6eaa61b68afa4442d48e327f2
+
+PODFILE CHECKSUM: 760bf78c5de65311a912cd4648646442f882fec6
+
+COCOAPODS: 1.6.1
