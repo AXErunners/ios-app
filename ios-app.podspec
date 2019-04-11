@@ -9,7 +9,7 @@ The iOS implementation of the Axe Platform Protocol
 
   s.homepage         = 'https://github.com/axerunners/ios-app'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Andrew Podkovyrin' => 'podkovyrin@gmail.com' }
+  s.author           = { 'AXErunners' => 'info@axerunners.com' }
   s.source           = { :git => 'https://github.com/axerunners/ios-app.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/axerunners'
 
