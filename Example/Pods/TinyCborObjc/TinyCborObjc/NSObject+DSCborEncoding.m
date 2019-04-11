@@ -21,7 +21,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NSString *const DSCborEncodingTinyCborErrorDomain = @"org.axe.tinycbor.encoding-error";
+NSString *const DSCborEncodingTinyCborErrorDomain = @"org.dash.tinycbor.encoding-error";
 
 static size_t const DSCborEncodingBufferChunkSize = 1024;
 
@@ -199,6 +199,12 @@ static size_t const DSCborEncodingBufferChunkSize = 1024;
             }
         }
         return cbor_encoder_close_container(encoder, &container);
+    }
+    else if ([object isKindOfClass:NSData.class]) {
+        NSData *dataObject = (NSData *)object;
+        return [self ds_performSafeEncodingIntoBuffer:buffer bufferSize:bufferSize encoder:encoder encodingBlock:^CborError {
+            return cbor_encode_byte_string(encoder, dataObject.bytes, dataObject.length);
+        }];
     }
     else {
         return CborErrorUnknownType;

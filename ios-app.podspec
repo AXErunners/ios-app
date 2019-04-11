@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ios-app'
-  s.version          = '0.0.3'
-  s.summary          = 'AXE Platform Protocol'
+  s.version          = '0.0.1'
+  s.summary          = 'Axe Platform Protocol'
 
   s.description      = <<-DESC
 The iOS implementation of the Axe Platform Protocol
@@ -9,7 +9,7 @@ The iOS implementation of the Axe Platform Protocol
 
   s.homepage         = 'https://github.com/axerunners/ios-app'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Andrew Podkovyrin' => 'podkovyrin@gmail.com' }
+  s.author           = { 'AXErunners' => 'info@axerunners.com' }
   s.source           = { :git => 'https://github.com/axerunners/ios-app.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/axerunners'
 
@@ -17,12 +17,12 @@ The iOS implementation of the Axe Platform Protocol
 
   s.source_files = 'ios-app/Classes/**/*'
 
-  s.resource_bundles = {
-    'ios-app' => ['ios-app/Assets/*.json']
-  }
+  # s.resource_bundles = {
+  #  'ios-app' => ['ios-app/Assets/**/*.json']
+  # }
 
   s.module_name = 'APP'
 
-  s.dependency 'DSJSONSchemaValidation', '2.0.5'
-  s.dependency 'TinyCborObjc', '0.3.0'
+  # s.dependency 'DSJSONSchemaValidation', '2.0.5'
+  s.dependency 'TinyCborObjc', '0.4.1'
 end
