@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ios-app'
-  s.version          = '0.0.3'
-  s.summary          = 'AXE Platform Protocol'
+  s.version          = '0.0.1'
+  s.summary          = 'Axe Platform Protocol'
 
   s.description      = <<-DESC
 The iOS implementation of the Axe Platform Protocol
