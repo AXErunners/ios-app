@@ -17,12 +17,12 @@ The iOS implementation of the Axe Platform Protocol
 
   s.source_files = 'ios-app/Classes/**/*'
 
-  s.resource_bundles = {
-    'ios-app' => ['ios-app/Assets/*.json']
-  }
+  # s.resource_bundles = {
+  #  'ios-app' => ['ios-app/Assets/**/*.json']
+  # }
 
   s.module_name = 'APP'
 
-  s.dependency 'DSJSONSchemaValidation', '2.0.5'
-  s.dependency 'TinyCborObjc', '0.3.0'
+  # s.dependency 'DSJSONSchemaValidation', '2.0.5'
+  s.dependency 'TinyCborObjc', '0.4.1'
 end
